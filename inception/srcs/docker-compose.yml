@@ -1,0 +1,27 @@
+version: "3.8" # this is the last version
+
+# ila makanch docker compose rah khask dir docker build -t nginx . f terminal lkola wahd
+
+services:
+  nginx:
+    # build the image from the docker file
+    build: ./requirements/nginx/.# where is the docker file
+    ports:
+      - "443:443"
+    depends_on:
+      - wordpress
+    restart: always
+
+  wordpress:
+    depends_on:  # the image should not run before mariadb
+      - mariadb
+    ports:
+      - "9000:9000"
+    build: ./requirements/wordpress/.
+    restart: always
+
+  mariadb:
+    build: ./requirements/mariadb/.
+    ports:
+      - "3306:3306"
+    restart: always

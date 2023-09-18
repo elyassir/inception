@@ -1,9 +1,0 @@
-version: "3.8" # this is the last version
-
-services:
-  nginx:
-     build: ./requirements/nginx/.# where is the docker file
-  wordpress:
-    build: ./requirements/wordpress/.
-  mariadb:
-    build: ./requirements/mariadb/.
