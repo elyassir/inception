@@ -5,12 +5,14 @@ version: "3.8" # this is the last version
 services:
   nginx:
     # build the image from the docker file
-    build: ./requirements/nginx/.# where is the docker file
+    build: ./requirements/nginx/.
+    # where is the docker file
     ports:
       - "443:443"
     depends_on:
       - wordpress
     restart: always
+    name: nginx
 
   wordpress:
     depends_on:  # the image should not run before mariadb
@@ -19,9 +21,10 @@ services:
       - "9000:9000"
     build: ./requirements/wordpress/.
     restart: always
-
+    name: wordpress
   mariadb:
     build: ./requirements/mariadb/.
     ports:
       - "3306:3306"
     restart: always
+    name: mariadb
