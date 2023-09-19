@@ -1,0 +1,34 @@
+```
+Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+
+
+To build the Docker image, use the docker build command:
+
+docker build -t <image_name> .
+
+-t name:tag --> tag is optional
+
+
+To run the Docker image, use the docker run command:
+this meaning create a container from the image
+
+docker run -d --name <container_name> -p 80:80 <image_id>
+
+-d --> run in detached mode
+-p --> port mapping
+
+
+docker run -it alpine:3.13
+
+-it --> interactive mode
+-i --> keep STDIN open even if not attached
+-t --> allocate a pseudo-TTY
+
+
+enter a running container, use exec instead:
+
+docker exec -it <container-name-or-id> bash # bash or sh
+
+
+
+```
