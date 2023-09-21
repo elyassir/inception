@@ -28,3 +28,8 @@ services:
       - "3306:3306"
     restart: always
     name: mariadb
+  
+
+
+  # restart: always # if the container is down it will be up again
+  # containers have to restart in case of a crash

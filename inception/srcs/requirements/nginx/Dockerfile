@@ -1,8 +1,11 @@
-FROM alpine:3.13
+FROM alpine:3.14
 
 EXPOSE 443
 
-RUN mkdir /run/nginx
+# RUN mkdir /run/nginx
+
+# this is not necessary because nginx will create it 
+# in alpine 3.14 
 
 RUN apk update && apk add nginx openssl
 
@@ -12,8 +15,8 @@ COPY index.html /var/www/html/
 
 RUN mkdir /etc/nginx/ssl
 
-RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/myhostname.key -out /etc/nginx/ssl/myhostname.crt -subj "/C=MO/L=BG/O=1337/OU=student/CN=yel-mass.42.ma"
-
+RUN openssl req -x509 -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/myhostname.key -out /etc/nginx/ssl/myhostname.crt -subj "/C=MO/L=/O=/OU=/CN="
+# i think there is no -nodes
 COPY conf/nginx.conf /etc/nginx/conf.d/default.conf
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
@@ -23,17 +26,8 @@ ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+# Read about how daemons work and whether it’s
+# a good idea to use them or not
 
 # mkdir : create a directory
 # /run/nginx : this is the directory where nginx.pid will be created
