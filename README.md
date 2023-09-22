@@ -27,7 +27,46 @@
     pull: Pull images from a registry
     push: Push images to a registry
 # Dockerfiles
+
 A Dockerfile is a text document that contains all the commands we would use to build our image.
+That is written in a specific format JSON or YAML.
+Docker reads the instructions given in the file and will use them to automatically build our image
+
+## Nginx:
+
+    FROM debian:buster
+    RUN apt-get update && apt-get upgrade -y && apt-get install nginx
+    COPY index.html /usr/share/nginx/html
+    EXPOSE 443
+    CMD ["nginx", "-g", "daemon off;"]
+
+1-FROM : This is the base image we want to use. In this case, we are using the latest version of Debian Buster.
+2- RUN : This is used to run commands on top of our base image. In this case, we are update the package list, upgrading any existing packages, and installing Nginx.
+3- COPY : This is used to copy files from our local machine to the image. In this case, we are copying the index.html file from the Docker build context to the /usr/share/nginx/html directory inside the container.
+4- EXPOSE : This is used to expose a port from the container to the host. this mean that we can access the container from the host using this port.
+5- CMD : This is used to run commands when the container is started. In this case, we are starting the Nginx service.
+
+To build the image we use that command:
+
+    docker build -t nginx .
+
+    -t: is used to give the image a name.
+    . : the directory that contains the Dockerfile.
+
+After building an image, now we use it to create a container:
+    
+        docker run -d -p 80:80 -p 443:443 nginx
+    
+        -d: is used to run the container in the background. If you want to run the container in the foreground, you can use -it instead.
+        -p: is used to map the ports from the container to the host. In this case, we are mapping port 80 and 443 from the container to the host.
+
+Now we can attach to the container’s console by executing this command
+
+    docker exec -it <container_id> sh (or bash)
+
+## Wordpress:
+
+
 ## Mariadb:
 
 
