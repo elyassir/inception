@@ -30,12 +30,18 @@
 ## Installation part:
 
 
-    Pull debian:buster (our base image)
-    update our package manager apt-get update -y
-    install mariadb server apt-get install mariadb-server -y
-    go to /etc/mysql/mariadb.conf.d/50-server.cnf and change line 28 from bind-address = 127.0.0.1 to bind-address = 0.0.0.0 for any network can connect to our Mariadb
-    service mysql start
-    create our database and our user and give him the access to the database then FLUSH PRIVILEGES
+Pull debian:buster (our base image)
+
+update our package manager apt-get update -y
+
+install mariadb server apt-get install mariadb-server -y
+
+go to /etc/mysql/mariadb.conf.d/50-server.cnf and 
+change line 28 from bind-address = 127.0.0.1 to bind-address = 0.0.0.0 
+for any network can connect to our Mariadb
+
+service mysql start
+create our database and our user and give him the access to the database then FLUSH PRIVILEGES
 
 to keep the container running run this command in CMD in your Dockerfile /usr/bin/mysqld_safe
     
