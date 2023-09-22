@@ -26,8 +26,9 @@
     exec: Run a command in a running container
     pull: Pull images from a registry
     push: Push images to a registry
-# Mariadb
-## Installation part:
+# Dockerfiles
+A Dockerfile is a text document that contains all the commands we would use to build our image.
+## Mariadb:
 
 
 Pull debian:buster (our base image)
