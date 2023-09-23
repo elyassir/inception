@@ -1,1506 +1,0 @@
-Script started on 2023-09-23 06:44:11-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="81" LINES="16"]
-/root/.zshrc:4: command not found: alais
-[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hscriptmake  docker-compose down[19Dls                 [17Dcd srcsls     docker-compose down[19Dcd inception/not_mine[21Ddocker-compose down  [19Dls                 [17Dcd srcsls     docker-compose down[19Dmake               [15Dscript      vvim ~/.zshrc[?1l>[?2004l
-]2;vim ~/.zshrc]1;vim[?1006;1000h[?1002h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;16r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[16;1H"~/.zshrc" 103L, 3918B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[34m# Path to your oh-my-zsh installation.[m[2;39H[K[3;1H[38;5;130mexport[m ZSH=[31m"[m[35m$HOME[m[31m/.oh-my-zsh"[m[3;30H[K[5;1H[34m# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes[m
-ZSH_THEME=[31m"robbyrussell"[m
-
-[34m# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )[m[16;64H14,0-1[9C4%[10;1H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[27m[23m[29m[m[H[2J[?25l[2;1H[96m# Path to your oh-my-zsh installation.[m
-[93mexport[m ZSH=[95m"[m[38;5;81m$HOME[m[95m/.oh-my-zsh"[m
-
-[96m# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes[m
-ZSH_THEME=[95m"robbyrussell"[m
-
-[96m# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )[m[16;64H14,0-1[9C4%"~/.zshrc" 103L, 3918B[10;1H[?25h[?25l[16;54Hi[10;1H[16;54H [10;1H[16;1H[1m-- INSERT --[m[16;13H[K[16;64H14,1[11C4%[10;1H[?25h[?25l[16;65H3[9;1H[?25h[?25l[16;65H2[8;1H[?25h[?25l[16;65H1[7;1H[?25h[?25l[16;65H0[6;1H[?25h[?25l[1;15r[1;1H[L[1;16r[1;1Halais script=[95m"bash ./root/inception/remove_all.sh"[m[16;64H[K[16;64H9,1[12C3%[6;1H[?25h[?25l[1;15r[1;1H[L[1;16r[16;64H[K[16;64H8,1[12C2%[6;1H[?25h[?25l[1;15r[1;1H[L[1;16r[1;1H[96m# export PATH=$HOME/bin:/usr/local/bin:$PATH[m[16;64H[K[16;64H7,1[12C1%[6;1H[?25h[?25l[1;15r[1;1H[L[1;16r[1;1H[96m# If you come from bash you might have to change your $PATH.[m[16;64H[K[16;64H6,1[11CTop[6;1H[?25h[?25l[16;64H5[5;1H[?25h[?25l[16;64H4[4;1H[?25h[?25l[16;64H3[3;1H[?25h[?25l[16;64H2[2;1H[?25h[?25l[16;64H1[1;1H[?25h[?25l[16;64H2[2;1H[?25h[?25l[16;64H3[3;1H[?25h[?25l[16;64H4[4;1H[?25h[?25l[16;66H2[4;2H[?25h[?25l[16;66H3[4;3H[?25h[?25l[16;66H4[4;4H[?25h[?25lis script=[95m"bash ./root/inception/remove_all.sh"[m[4;50H[K[16;66H3[4;3H[?25h[?25l[16;66H4[4;4H[?25h[?25l[93malias[m script=[95m"bash ./root/inception/remove_all.sh"[m[16;66H5[4;5H[?25h[16;1H[K[4;4H[?25l[16;54H^[[4;4H[16;54H  [4;5H[16;64H4,4[11CTop[4;4H[?25h[?25l[16;54H^[[4;4H[16;54H  [4;4H[16;54H^[[4;4H[16;54H  [4;4H[?25h[?25l[16;54H:[4;4H[16;54H[K[16;1H:[?25hwq[?25l[?1006;1000l[?1002l[?2004l[>4;m"~/.zshrc" 103L, 3918B written[23;2t[23;1t
-[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kvim ~/.zshrc[12Dalias       scriptalias vim ~/.zshrc[12D            [12Dssource[1m [0m[0m 
-zsh: do you wish to see all 1660 possibilities (830 lines)? n[J[A[0m[27m[24m[21Csource[K[1C~/.z
-[J[0m.zcompdump-debian-5.9      .zsh_history                                        
-[J.zcompdump-debian-5.9.zwc  [J.zshrc                     [J                         [A[A[0m[27m[24m[21Csource ~/.z[Ks
-[J[A[33Ch
-[J[J[0m.zsh_history  [J.zshrc      [J[A[0m[27m[24m[21Csource ~/.zsh[K_history
-[J[7m.zsh_history[0m  [J.zshrc      [J[A[0m[27m[24m[21Csource ~/.zsh_history[K
-[7m.zsh_history[0m  [7m.zsh_history[0m  [A[0m[27m[24m[21Csource ~/.zsh_history[K[8Drc      
-[14C[7m.zshrc      [0m.zsh_history  [A[0m[27m[24m[21Csource ~/.zshrc[K
-[J[A[36C[1m [0m[0m [?1l>[?2004l
-[J]2;source ~/.zshrc]1;source[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsource ~/.zshrc[15Dvim[3P[9C   [12Dalias       script[?1l>[?2004l
-]2;bash ./root/inception/remove_all.sh]1;scriptbash: ./root/inception/remove_all.sh: No such file or directory
-[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;31m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hscriptsource ~/.zshrc[15Dvim[3P[9C   [?1l>[?2004l
-]2;vim ~/.zshrc]1;vim[?1006;1000h[?1002h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;16r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[16;1H"~/.zshrc" 103L, 3918B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[34m# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH[m[2;45H[K[3;1H[K[4;1H[38;5;130malias[m script=[31m"bash ./root/inception/remove_all.sh"[m
-
-[34m# Path to your oh-my-zsh installation.[m
-[38;5;130mexport[m ZSH=[31m"[m[35m$HOME[m[31m/.oh-my-zsh"[m
-
-[34m# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes[m
-ZSH_THEME=[31m"robbyrussell"[m
-
-[34m# Set list of themes to pick from when loading at random[m[16;64H4,4[11CTop[4;4H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[27m[23m[29m[m[H[2J[?25l[1;1H[96m# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH[m
-
-[93malias[m script=[95m"bash ./root/inception/remove_all.sh"[m
-
-[96m# Path to your oh-my-zsh installation.[m
-[93mexport[m ZSH=[95m"[m[38;5;81m$HOME[m[95m/.oh-my-zsh"[m
-
-[96m# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes[m
-ZSH_THEME=[95m"robbyrussell"[m
-
-[96m# Set list of themes to pick from when loading at random[m[16;64H4,4[11CTop"~/.zshrc" 103L, 3918B[4;4H[?25h[?25l[16;54Hi[4;4H[16;54H [4;4H[16;1H[1m-- INSERT --[m[16;13H[K[16;64H4,4[11CTop[4;4H[?25h[?25l[16;64H5,1[5;1H[?25h[?25l[16;64H4,4[4;4H[?25h[?25l[16;64H3,1[3;1H[?25h[?25l[16;64H4,4[4;4H[?25h[?25l[16;66H5[4;5H[?25h[?25l[16;66H6[4;6H[?25h[?25l[16;66H7[4;7H[?25h[?25l[16;66H8[4;8H[?25h[?25l[16;66H9[4;9H[?25h[?25l[16;66H10[4;10H[?25h[?25l[16;67H1[4;11H[?25h[?25l[16;67H2[4;12H[?25h[?25l[16;67H3[4;13H[?25h[?25l[16;67H4[4;14H[?25h[?25l[16;67H5[4;15H[?25h[?25l[16;67H6[4;16H[?25h[?25l[16;67H7[4;17H[?25h[?25l[16;67H8[4;18H[?25h[?25l[16;67H9[4;19H[?25h[?25l[16;66H20[4;20H[?25h[?25l[16;67H1[4;21H[?25h[?25l[16;67H2[4;22H[?25h[?25l[16;67H3[4;23H[?25h[?25l[16;67H2[4;22H[?25h[?25l[16;67H3[4;23H[?25h[?25l[16;67H4[4;24H[?25h[?25l[16;67H5[4;25H[?25h[?25l[16;67H6[4;26H[?25h[?25l[95m/inception/remove_all.sh"[m[4;50H[K[16;67H5[4;25H[?25h[?25l[95m/inception/remove_all.sh"[m[4;49H[K[16;67H4[4;24H[?25h[?25l[95m/inception/remove_all.sh"[m[4;48H[K[16;67H3[4;23H[?25h[?25l[95m/inception/remove_all.sh"[m[4;47H[K[16;67H2[4;22H[?25h[?25l[95minception/remove_all.sh"[m[4;46H[K[16;67H1[4;21H[?25h[16;1H[K[4;20H[?25l[16;54H^[[4;20H[16;54H  [4;21H[16;64H4,20[10CTop[4;20H[?25h[?25l[16;54H:[4;20H[16;54H[K[16;1H:[?25hwq[?25l[?1006;1000l[?1002l[?2004l[>4;m"~/.zshrc" 103L, 3913B written[23;2t[23;1t
-[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvim ~/.zshrc[12Dscript      [?1l>[?2004l
-]2;bash ./root/inception/remove_all.sh]1;scriptbash: ./root/inception/remove_all.sh: No such file or directory
-[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;31m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hscriptvim ~/.zshrc[12Dscript      source ~/.zshrc[?1l>[?2004l
-]2;source ~/.zshrc]1;source[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsource ~/.zshrc[15Dscript         [9D[?1l>[?2004l
-]2;bash ./inception/remove_all.sh]1;scriptbash: ./inception/remove_all.sh: No such file or directory
-[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;31m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd[?1l>[?2004l
-]2;cd]1;cd[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~]1;~[0m[27m[24m[J[01;32m➜  [36m~[00m [K[?1h=[?2004h../
-[J[01;34minception[0m/  [J[01;34mmariadb[0m/    [J[01;34mwordpress[0m/[J[A[0m[27m[24m[5C./[Kinception[1m/[0m
-[J[7minception/[0m  [J[01;34mmariadb[0m/    [J[01;34mwordpress[0m/[J[A[0m[27m[24m[5C./inception[1m/[0m[K
-[7minception/[0m  [7minception/[0m  [A[0m[27m[24m[5C./inception[1m/[0m[K
-[J[A[17C[0m/
-[J[01;34mexamples[0m/       [01;34mnew[0m/            [01;34mtestNginx[0m/                                  
-[J[01;34minception[0m/      [J[01;32mremove_all.sh[0m*  [J[01;34mWordpress[0m/      [J                            [A[A[0m[27m[24m[5C./inception/[Kexamples[1m/[0m
-[7mexamples/     [0m  [01;34mnew[0m/            [01;34mtestNginx[0m/                                  [K
-[J[01;34minception[0m/      [J[01;32mremove_all.sh[0m*  [J[01;34mWordpress[0m/      [J                            [A[A[0m[27m[24m[5C./inception/examples[1m/[0m[K
-[7mexamples/     [0m  [7mexamples/     [0m  [A[0m[27m[24m[5C./inception/examples[1m/[0m[K[9Dinceptio[0mn[1m/[0m
-[01;34mexamples[0m/       [1B[7minception/    [0m  [A[A[0m[27m[24m[5C./inception/inception[1m/[0m[K[10Dremove_al[0ml.sh
-[1B[16C[7mremove_all.sh*[0m  [01;34minception[0m/      [A[A[0m[27m[24m[5C./inception/remove_all.sh[K
-[J[A[30C[1m [0m[0m [?1l>[?2004l
-[J]2;./inception/remove_all.sh]1;./inception/remove_all.sh"docker stop" requires at least 1 argument.
-See 'docker stop --help'.
-
-Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
-
-Stop one or more running containers
-"docker rm" requires at least 1 argument.
-See 'docker rm --help'.
-
-Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]
-
-Remove one or more containers
-Untagged: srcs_nginx:latest
-Deleted: sha256:b2032b5bc497f7959f99221f0a03872c734949461232b4dcd3cbb3528fc4f5d5
-Deleted: sha256:b2712a16592d7b03662b121f0a35e202de94c8308b5d8586b6dd5a175eb30d90
-Deleted: sha256:a51ec937f0226df99d6c97bf0db4ed196c72d0e8d37bceebd312e10ce8846dcb
-Deleted: sha256:6f325ad1c16e65fb46c8fbe0497d78c283e56cac5ecd958a0fb41f61a1bb914e
-Deleted: sha256:ae617b230942b88a5ef8ce76a78fd95929bf98c16fe417a69b6b3e733dc58111
-Deleted: sha256:782e0cb3f7f591288f1652e31c76d1f5d0e4d16fb13a00127e7dd06df1a00ff1
-Deleted: sha256:3602b6e170cba0c0317e499ae09a216c1967ca85081b1f37eda1982690306edd
-Deleted: sha256:279a9dce9b465c279be99e5cad1fd0df2bdd92a182bc00311399f922c94b44e3
-Untagged: srcs_wordpress:latest
-Deleted: sha256:5ac28d1e33b9f0bf07d92be28571200cca2cab83b8c3f230ac54d5a9ae411df6
-Deleted: sha256:84c2c3a55672a0d7b1cd379464219eae00ae96510290182025f3eb208cc06013
-Deleted: sha256:0a1903db8173474e29b593632773fbc967020cba9b8f20033639fe0e0564bc47
-Deleted: sha256:8c20a3306cb24b2d0404fa17fcdc60e37ece5afefa2730a14871b56b826cb1d5
-Deleted: sha256:200d1d173191cbaf1b84b76972e5074d920e46dab1079310171902dca344c268
-Deleted: sha256:25e08f9770ab88d21693c1e469455bb6a1c37b31448e6fcb15eded5c33512982
-Deleted: sha256:9fc3fc9ad9f50be0309075d93a25cb59150e11d8fa29345b575328334f20bd27
-Deleted: sha256:97369e7e8d088a8d197d4ed336822633005abe871de1b3f959029dde26038736
-Deleted: sha256:fb8416f4d563e0fd8d217a8ffb936d94832e35a2db27a580fff0062313838b39
-Deleted: sha256:20d7b1b59d2adf2e219aef582b3016c2d239244e988a1cfb04610dbbd4b3b0e0
-Deleted: sha256:b018a2dfd59380991874b56dd4216b320382b0d3ef816ad580fc1fbb6a3b04af
-Untagged: srcs_mariadb:latest
-Deleted: sha256:37d970df12abdbb2cb34196af23d6b47219ac754e8bd851c5c43bab126fab915
-Deleted: sha256:ce56cf809d1989f6b3809e970cf7ea4397ba575d4b467b024d857cdc32a0999f
-Deleted: sha256:cb0c9703eb567db17d05721bf8066620eab823e2607e801afe85001ad3ece2e9
-Deleted: sha256:d06d96ed46880a9dc44c30559f1745849a76a73a59c3d255f4a17a3788abe0b0
-Deleted: sha256:b1b6dbd7b3f89bdaabca063846b3443fb9ee6f4e8ba4182dfb1dd6ead0c851fd
-Deleted: sha256:26194507dea6796692330cbb661b9d5747390084ed5be95799b986c0d4959bce
-Deleted: sha256:d62f528e8756448b3f32b2de79ba524a6e0ad50c7fd11070fa3b05849b75f406
-Deleted: sha256:935871396199bca3bacfbdb1c25d78387b8b334a721ad508f03a773614c4f14e
-Deleted: sha256:87b03cf1239f5f886fda24ad0045d994f0176844134cbfa5e6ac1385df05cfeb
-Deleted: sha256:bf122588f45e54d78f90de0961fe75b079989cd8d49617b013c9ede06abe534e
-Deleted: sha256:e925263634020d2fffd8bb4d48b6e9f0949adcef3d61027820934af122836fcd
-Deleted: sha256:02ef6fac0ab2d546e4837bd1c55728bfb11ff9b34f9f454a7c9c39d8e6178135
-Untagged: debian:buster
-Untagged: debian@sha256:484cc8ab0d73f513e3f9bacd03424eb081bd90f594d7ebde42587843fdc242f3
-Deleted: sha256:4ad95f81332ef648c09613c6259ed2b20c55d891f68bc78666704b19384130f8
-db
-wp
-Error response from daemon: bridge is a pre-defined network and cannot be removed
-Error response from daemon: host is a pre-defined network and cannot be removed
-Error response from daemon: none is a pre-defined network and cannot be removed
-[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~]1;~[0m[27m[24m[J[01;31m➜  [36m~[00m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[01;31m➜  [36m~[00m [Kccd -[?1l>[?2004l
-]2;cd -]1;cd~/inception/new/srcs
-[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kcd -./inception/remove_all.sh[25Dcd                       [23Dscriptsource ~/.zshrc[15Dscript         [9Dvim ~/.zshrc[12Dscript      source ~/.zshrc[15Dvim[3P[9C   [12Dalias       scriptmake  docker-compose down[19Dls                 [17Ddocker-compose down[19Dls                 [17Ddocker-compose down    up[?1l>[?2004l
-]2;docker-compose up]1;docker-composeCreating network "app-network" with driver "bridge"
-Creating volume "wp" with local driver
-Creating volume "db" with local driver
-Building mariadb
-Sending build context to Docker daemon  5.632kB
-Step 1/8 : FROM debian:buster
-buster: Pulling from library/debian
-
-[1A[2K0dfc3f78750b: Already exists [1BDigest: sha256:484cc8ab0d73f513e3f9bacd03424eb081bd90f594d7ebde42587843fdc242f3
-Status: Downloaded newer image for debian:buster
- ---> 4ad95f81332e
-Step 2/8 : RUN apt-get update
- ---> Running in 29c3f6411952
-Get:1 http://deb.debian.org/debian buster InRelease [122 kB]
-Get:2 http://deb.debian.org/debian-security buster/updates InRelease [34.8 kB]
-Get:3 http://deb.debian.org/debian buster-updates InRelease [56.6 kB]
-Get:4 http://deb.debian.org/debian buster/main amd64 Packages [7909 kB]
-Get:5 http://deb.debian.org/debian-security buster/updates/main amd64 Packages [552 kB]
-Get:6 http://deb.debian.org/debian buster-updates/main amd64 Packages [8788 B]
-Fetched 8683 kB in 1s (7010 kB/s)
-Reading package lists...
-Removing intermediate container 29c3f6411952
- ---> bfe72c00bf1d
-Step 3/8 : RUN apt-get install -y mariadb-server
- ---> Running in 02d826d318f7
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  galera-3 gawk libaio1 libcgi-fast-perl libcgi-pm-perl
-  libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libencode-locale-perl
-  libfcgi-perl libgdbm-compat4 libgdbm6 libgpm2 libhtml-parser-perl
-  libhtml-tagset-perl libhtml-template-perl libhttp-date-perl
-  libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmariadb3
-  libmpfr6 libncurses6 libperl5.28 libpopt0 libreadline5 libreadline7
-  libsigsegv2 libsnappy1v5 libssl1.1 libterm-readkey-perl libtimedate-perl
-  liburi-perl libwrap0 lsb-base lsof mariadb-client-10.3
-  mariadb-client-core-10.3 mariadb-common mariadb-server-10.3
-  mariadb-server-core-10.3 mysql-common netbase perl perl-modules-5.28 psmisc
-  readline-common rsync socat
-Suggested packages:
-  gawk-doc libclone-perl libmldbm-perl libnet-daemon-perl
-  libsql-statement-perl gdbm-l10n gpm libdata-dump-perl
-  libipc-sharedcache-perl sensible-utils libwww-perl mailx mariadb-test
-  netcat-openbsd tinyca perl-doc libterm-readline-gnu-perl
-  | libterm-readline-perl-perl make libb-debug-perl liblocale-codes-perl
-  readline-doc openssh-client openssh-server
-The following NEW packages will be installed:
-  galera-3 gawk libaio1 libcgi-fast-perl libcgi-pm-perl
-  libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libencode-locale-perl
-  libfcgi-perl libgdbm-compat4 libgdbm6 libgpm2 libhtml-parser-perl
-  libhtml-tagset-perl libhtml-template-perl libhttp-date-perl
-  libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmariadb3
-  libmpfr6 libncurses6 libperl5.28 libpopt0 libreadline5 libreadline7
-  libsigsegv2 libsnappy1v5 libssl1.1 libterm-readkey-perl libtimedate-perl
-  liburi-perl libwrap0 lsb-base lsof mariadb-client-10.3
-  mariadb-client-core-10.3 mariadb-common mariadb-server mariadb-server-10.3
-  mariadb-server-core-10.3 mysql-common netbase perl perl-modules-5.28 psmisc
-  readline-common rsync socat
-0 upgraded, 50 newly installed, 0 to remove and 0 not upgraded.
-Need to get 32.2 MB of archives.
-After this operation, 226 MB of additional disk space will be used.
-Get:1 http://deb.debian.org/debian buster/main amd64 perl-modules-5.28 all 5.28.1-6+deb10u1 [2873 kB]
-Get:2 http://deb.debian.org/debian buster/main amd64 libgdbm6 amd64 1.18.1-4 [64.7 kB]
-Get:3 http://deb.debian.org/debian buster/main amd64 libgdbm-compat4 amd64 1.18.1-4 [44.1 kB]
-Get:4 http://deb.debian.org/debian buster/main amd64 libperl5.28 amd64 5.28.1-6+deb10u1 [3894 kB]
-Get:5 http://deb.debian.org/debian buster/main amd64 perl amd64 5.28.1-6+deb10u1 [204 kB]
-Get:6 http://deb.debian.org/debian buster/main amd64 libmpfr6 amd64 4.0.2-1 [775 kB]
-Get:7 http://deb.debian.org/debian buster/main amd64 readline-common all 7.0-5 [70.6 kB]
-Get:8 http://deb.debian.org/debian buster/main amd64 libreadline7 amd64 7.0-5 [151 kB]
-Get:9 http://deb.debian.org/debian buster/main amd64 libsigsegv2 amd64 2.12-2 [32.8 kB]
-Get:10 http://deb.debian.org/debian buster/main amd64 gawk amd64 1:4.2.1+dfsg-1 [660 kB]
-Get:11 http://deb.debian.org/debian buster/main amd64 mysql-common all 5.8+1.0.5 [7324 B]
-Get:12 http://deb.debian.org/debian-security buster/updates/main amd64 mariadb-common all 1:10.3.39-0+deb10u1 [33.5 kB]
-Get:13 http://deb.debian.org/debian-security buster/updates/main amd64 libssl1.1 amd64 1.1.1n-0+deb10u6 [1552 kB]
-Get:14 http://deb.debian.org/debian buster/main amd64 galera-3 amd64 25.3.25-2 [920 kB]
-Get:15 http://deb.debian.org/debian buster/main amd64 libdbi-perl amd64 1.642-1+deb10u2 [775 kB]
-Get:16 http://deb.debian.org/debian buster/main amd64 lsb-base all 10.2019051400 [28.4 kB]
-Get:17 http://deb.debian.org/debian buster/main amd64 lsof amd64 4.91+dfsg-1 [319 kB]
-Get:18 http://deb.debian.org/debian buster/main amd64 libconfig-inifiles-perl all 3.000001-1 [51.9 kB]
-Get:19 http://deb.debian.org/debian buster/main amd64 libaio1 amd64 0.3.112-3 [11.2 kB]
-Get:20 http://deb.debian.org/debian-security buster/updates/main amd64 libncurses6 amd64 6.1+20181013-2+deb10u3 [102 kB]
-Get:21 http://deb.debian.org/debian buster/main amd64 libreadline5 amd64 5.2+dfsg-3+b13 [120 kB]
-Get:22 http://deb.debian.org/debian buster/main amd64 libsnappy1v5 amd64 1.1.7-1 [17.0 kB]
-Get:23 http://deb.debian.org/debian-security buster/updates/main amd64 mariadb-client-core-10.3 amd64 1:10.3.39-0+deb10u1 [5780 kB]
-Get:24 http://deb.debian.org/debian-security buster/updates/main amd64 mariadb-client-10.3 amd64 1:10.3.39-0+deb10u1 [1144 kB]
-Get:25 http://deb.debian.org/debian-security buster/updates/main amd64 mariadb-server-core-10.3 amd64 1:10.3.39-0+deb10u1 [6194 kB]
-Get:26 http://deb.debian.org/debian buster/main amd64 psmisc amd64 23.2-1+deb10u1 [126 kB]
-Get:27 http://deb.debian.org/debian buster/main amd64 libpopt0 amd64 1.16-12 [49.4 kB]
-Get:28 http://deb.debian.org/debian buster/main amd64 rsync amd64 3.1.3-6 [397 kB]
-Get:29 http://deb.debian.org/debian buster/main amd64 libwrap0 amd64 7.6.q-28 [58.7 kB]
-Get:30 http://deb.debian.org/debian buster/main amd64 socat amd64 1.7.3.2-2 [358 kB]
-Get:31 http://deb.debian.org/debian-security buster/updates/main amd64 mariadb-server-10.3 amd64 1:10.3.39-0+deb10u1 [4224 kB]
-Get:32 http://deb.debian.org/debian buster/main amd64 netbase all 5.6 [19.4 kB]
-Get:33 http://deb.debian.org/debian buster/main amd64 libhtml-tagset-perl all 3.20-3 [12.7 kB]
-Get:34 http://deb.debian.org/debian buster/main amd64 liburi-perl all 1.76-1 [89.9 kB]
-Get:35 http://deb.debian.org/debian buster/main amd64 libhtml-parser-perl amd64 3.72-3+b3 [105 kB]
-Get:36 http://deb.debian.org/debian buster/main amd64 libcgi-pm-perl all 4.40-1 [222 kB]
-Get:37 http://deb.debian.org/debian buster/main amd64 libfcgi-perl amd64 0.78-2+b3 [39.0 kB]
-Get:38 http://deb.debian.org/debian buster/main amd64 libcgi-fast-perl all 1:2.13-1 [11.4 kB]
-Get:39 http://deb.debian.org/debian-security buster/updates/main amd64 libmariadb3 amd64 1:10.3.39-0+deb10u1 [173 kB]
-Get:40 http://deb.debian.org/debian buster/main amd64 libdbd-mysql-perl amd64 4.050-2 [121 kB]
-Get:41 http://deb.debian.org/debian buster/main amd64 libencode-locale-perl all 1.05-1 [13.7 kB]
-Get:42 http://deb.debian.org/debian buster/main amd64 libgpm2 amd64 1.20.7-5 [35.1 kB]
-Get:43 http://deb.debian.org/debian buster/main amd64 libhtml-template-perl all 2.97-1 [66.0 kB]
-Get:44 http://deb.debian.org/debian buster/main amd64 libtimedate-perl all 2.3000-2+deb10u1 [38.1 kB]
-Get:45 http://deb.debian.org/debian buster/main amd64 libhttp-date-perl all 6.02-1 [10.7 kB]
-Get:46 http://deb.debian.org/debian buster/main amd64 libio-html-perl all 1.001-1 [17.6 kB]
-Get:47 http://deb.debian.org/debian buster/main amd64 liblwp-mediatypes-perl all 6.02-1 [22.1 kB]
-Get:48 http://deb.debian.org/debian buster/main amd64 libhttp-message-perl all 6.18-1 [77.8 kB]
-Get:49 http://deb.debian.org/debian buster/main amd64 libterm-readkey-perl amd64 2.38-1 [27.4 kB]
-Get:50 http://deb.debian.org/debian-security buster/updates/main amd64 mariadb-server all 1:10.3.39-0+deb10u1 [32.4 kB]
-[91mdebconf: delaying package configuration, since apt-utils is not installed
-[0mFetched 32.2 MB in 1s (33.9 MB/s)
-Selecting previously unselected package perl-modules-5.28.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6686 files and directories currently installed.)
-Preparing to unpack .../0-perl-modules-5.28_5.28.1-6+deb10u1_all.deb ...
-Unpacking perl-modules-5.28 (5.28.1-6+deb10u1) ...
-Selecting previously unselected package libgdbm6:amd64.
-Preparing to unpack .../1-libgdbm6_1.18.1-4_amd64.deb ...
-Unpacking libgdbm6:amd64 (1.18.1-4) ...
-Selecting previously unselected package libgdbm-compat4:amd64.
-Preparing to unpack .../2-libgdbm-compat4_1.18.1-4_amd64.deb ...
-Unpacking libgdbm-compat4:amd64 (1.18.1-4) ...
-Selecting previously unselected package libperl5.28:amd64.
-Preparing to unpack .../3-libperl5.28_5.28.1-6+deb10u1_amd64.deb ...
-Unpacking libperl5.28:amd64 (5.28.1-6+deb10u1) ...
-Selecting previously unselected package perl.
-Preparing to unpack .../4-perl_5.28.1-6+deb10u1_amd64.deb ...
-Unpacking perl (5.28.1-6+deb10u1) ...
-Selecting previously unselected package libmpfr6:amd64.
-Preparing to unpack .../5-libmpfr6_4.0.2-1_amd64.deb ...
-Unpacking libmpfr6:amd64 (4.0.2-1) ...
-Selecting previously unselected package readline-common.
-Preparing to unpack .../6-readline-common_7.0-5_all.deb ...
-Unpacking readline-common (7.0-5) ...
-Selecting previously unselected package libreadline7:amd64.
-Preparing to unpack .../7-libreadline7_7.0-5_amd64.deb ...
-Unpacking libreadline7:amd64 (7.0-5) ...
-Selecting previously unselected package libsigsegv2:amd64.
-Preparing to unpack .../8-libsigsegv2_2.12-2_amd64.deb ...
-Unpacking libsigsegv2:amd64 (2.12-2) ...
-Setting up libmpfr6:amd64 (4.0.2-1) ...
-Setting up readline-common (7.0-5) ...
-Setting up libreadline7:amd64 (7.0-5) ...
-Setting up libsigsegv2:amd64 (2.12-2) ...
-Selecting previously unselected package gawk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8676 files and directories currently installed.)
-Preparing to unpack .../00-gawk_1%3a4.2.1+dfsg-1_amd64.deb ...
-Unpacking gawk (1:4.2.1+dfsg-1) ...
-Selecting previously unselected package mysql-common.
-Preparing to unpack .../01-mysql-common_5.8+1.0.5_all.deb ...
-Unpacking mysql-common (5.8+1.0.5) ...
-Selecting previously unselected package mariadb-common.
-Preparing to unpack .../02-mariadb-common_1%3a10.3.39-0+deb10u1_all.deb ...
-Unpacking mariadb-common (1:10.3.39-0+deb10u1) ...
-Selecting previously unselected package libssl1.1:amd64.
-Preparing to unpack .../03-libssl1.1_1.1.1n-0+deb10u6_amd64.deb ...
-Unpacking libssl1.1:amd64 (1.1.1n-0+deb10u6) ...
-Selecting previously unselected package galera-3.
-Preparing to unpack .../04-galera-3_25.3.25-2_amd64.deb ...
-Unpacking galera-3 (25.3.25-2) ...
-Selecting previously unselected package libdbi-perl:amd64.
-Preparing to unpack .../05-libdbi-perl_1.642-1+deb10u2_amd64.deb ...
-Unpacking libdbi-perl:amd64 (1.642-1+deb10u2) ...
-Selecting previously unselected package lsb-base.
-Preparing to unpack .../06-lsb-base_10.2019051400_all.deb ...
-Unpacking lsb-base (10.2019051400) ...
-Selecting previously unselected package lsof.
-Preparing to unpack .../07-lsof_4.91+dfsg-1_amd64.deb ...
-Unpacking lsof (4.91+dfsg-1) ...
-Selecting previously unselected package libconfig-inifiles-perl.
-Preparing to unpack .../08-libconfig-inifiles-perl_3.000001-1_all.deb ...
-Unpacking libconfig-inifiles-perl (3.000001-1) ...
-Selecting previously unselected package libaio1:amd64.
-Preparing to unpack .../09-libaio1_0.3.112-3_amd64.deb ...
-Unpacking libaio1:amd64 (0.3.112-3) ...
-Selecting previously unselected package libncurses6:amd64.
-Preparing to unpack .../10-libncurses6_6.1+20181013-2+deb10u3_amd64.deb ...
-Unpacking libncurses6:amd64 (6.1+20181013-2+deb10u3) ...
-Selecting previously unselected package libreadline5:amd64.
-Preparing to unpack .../11-libreadline5_5.2+dfsg-3+b13_amd64.deb ...
-Unpacking libreadline5:amd64 (5.2+dfsg-3+b13) ...
-Selecting previously unselected package libsnappy1v5:amd64.
-Preparing to unpack .../12-libsnappy1v5_1.1.7-1_amd64.deb ...
-Unpacking libsnappy1v5:amd64 (1.1.7-1) ...
-Selecting previously unselected package mariadb-client-core-10.3.
-Preparing to unpack .../13-mariadb-client-core-10.3_1%3a10.3.39-0+deb10u1_amd64.deb ...
-Unpacking mariadb-client-core-10.3 (1:10.3.39-0+deb10u1) ...
-Selecting previously unselected package mariadb-client-10.3.
-Preparing to unpack .../14-mariadb-client-10.3_1%3a10.3.39-0+deb10u1_amd64.deb ...
-Unpacking mariadb-client-10.3 (1:10.3.39-0+deb10u1) ...
-Selecting previously unselected package mariadb-server-core-10.3.
-Preparing to unpack .../15-mariadb-server-core-10.3_1%3a10.3.39-0+deb10u1_amd64.deb ...
-Unpacking mariadb-server-core-10.3 (1:10.3.39-0+deb10u1) ...
-Selecting previously unselected package psmisc.
-Preparing to unpack .../16-psmisc_23.2-1+deb10u1_amd64.deb ...
-Unpacking psmisc (23.2-1+deb10u1) ...
-Selecting previously unselected package libpopt0:amd64.
-Preparing to unpack .../17-libpopt0_1.16-12_amd64.deb ...
-Unpacking libpopt0:amd64 (1.16-12) ...
-Selecting previously unselected package rsync.
-Preparing to unpack .../18-rsync_3.1.3-6_amd64.deb ...
-Unpacking rsync (3.1.3-6) ...
-Selecting previously unselected package libwrap0:amd64.
-Preparing to unpack .../19-libwrap0_7.6.q-28_amd64.deb ...
-Unpacking libwrap0:amd64 (7.6.q-28) ...
-Selecting previously unselected package socat.
-Preparing to unpack .../20-socat_1.7.3.2-2_amd64.deb ...
-Unpacking socat (1.7.3.2-2) ...
-Setting up mysql-common (5.8+1.0.5) ...
-update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
-Setting up mariadb-common (1:10.3.39-0+deb10u1) ...
-update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
-Selecting previously unselected package mariadb-server-10.3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9447 files and directories currently installed.)
-Preparing to unpack .../00-mariadb-server-10.3_1%3a10.3.39-0+deb10u1_amd64.deb ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-Unpacking mariadb-server-10.3 (1:10.3.39-0+deb10u1) ...
-Selecting previously unselected package netbase.
-Preparing to unpack .../01-netbase_5.6_all.deb ...
-Unpacking netbase (5.6) ...
-Selecting previously unselected package libhtml-tagset-perl.
-Preparing to unpack .../02-libhtml-tagset-perl_3.20-3_all.deb ...
-Unpacking libhtml-tagset-perl (3.20-3) ...
-Selecting previously unselected package liburi-perl.
-Preparing to unpack .../03-liburi-perl_1.76-1_all.deb ...
-Unpacking liburi-perl (1.76-1) ...
-Selecting previously unselected package libhtml-parser-perl.
-Preparing to unpack .../04-libhtml-parser-perl_3.72-3+b3_amd64.deb ...
-Unpacking libhtml-parser-perl (3.72-3+b3) ...
-Selecting previously unselected package libcgi-pm-perl.
-Preparing to unpack .../05-libcgi-pm-perl_4.40-1_all.deb ...
-Unpacking libcgi-pm-perl (4.40-1) ...
-Selecting previously unselected package libfcgi-perl.
-Preparing to unpack .../06-libfcgi-perl_0.78-2+b3_amd64.deb ...
-Unpacking libfcgi-perl (0.78-2+b3) ...
-Selecting previously unselected package libcgi-fast-perl.
-Preparing to unpack .../07-libcgi-fast-perl_1%3a2.13-1_all.deb ...
-Unpacking libcgi-fast-perl (1:2.13-1) ...
-Selecting previously unselected package libmariadb3:amd64.
-Preparing to unpack .../08-libmariadb3_1%3a10.3.39-0+deb10u1_amd64.deb ...
-Unpacking libmariadb3:amd64 (1:10.3.39-0+deb10u1) ...
-Selecting previously unselected package libdbd-mysql-perl:amd64.
-Preparing to unpack .../09-libdbd-mysql-perl_4.050-2_amd64.deb ...
-Unpacking libdbd-mysql-perl:amd64 (4.050-2) ...
-Selecting previously unselected package libencode-locale-perl.
-Preparing to unpack .../10-libencode-locale-perl_1.05-1_all.deb ...
-Unpacking libencode-locale-perl (1.05-1) ...
-Selecting previously unselected package libgpm2:amd64.
-Preparing to unpack .../11-libgpm2_1.20.7-5_amd64.deb ...
-Unpacking libgpm2:amd64 (1.20.7-5) ...
-Selecting previously unselected package libhtml-template-perl.
-Preparing to unpack .../12-libhtml-template-perl_2.97-1_all.deb ...
-Unpacking libhtml-template-perl (2.97-1) ...
-Selecting previously unselected package libtimedate-perl.
-Preparing to unpack .../13-libtimedate-perl_2.3000-2+deb10u1_all.deb ...
-Unpacking libtimedate-perl (2.3000-2+deb10u1) ...
-Selecting previously unselected package libhttp-date-perl.
-Preparing to unpack .../14-libhttp-date-perl_6.02-1_all.deb ...
-Unpacking libhttp-date-perl (6.02-1) ...
-Selecting previously unselected package libio-html-perl.
-Preparing to unpack .../15-libio-html-perl_1.001-1_all.deb ...
-Unpacking libio-html-perl (1.001-1) ...
-Selecting previously unselected package liblwp-mediatypes-perl.
-Preparing to unpack .../16-liblwp-mediatypes-perl_6.02-1_all.deb ...
-Unpacking liblwp-mediatypes-perl (6.02-1) ...
-Selecting previously unselected package libhttp-message-perl.
-Preparing to unpack .../17-libhttp-message-perl_6.18-1_all.deb ...
-Unpacking libhttp-message-perl (6.18-1) ...
-Selecting previously unselected package libterm-readkey-perl.
-Preparing to unpack .../18-libterm-readkey-perl_2.38-1_amd64.deb ...
-Unpacking libterm-readkey-perl (2.38-1) ...
-Selecting previously unselected package mariadb-server.
-Preparing to unpack .../19-mariadb-server_1%3a10.3.39-0+deb10u1_all.deb ...
-Unpacking mariadb-server (1:10.3.39-0+deb10u1) ...
-Setting up perl-modules-5.28 (5.28.1-6+deb10u1) ...
-Setting up libconfig-inifiles-perl (3.000001-1) ...
-Setting up lsb-base (10.2019051400) ...
-Setting up libreadline5:amd64 (5.2+dfsg-3+b13) ...
-Setting up libgpm2:amd64 (1.20.7-5) ...
-Setting up gawk (1:4.2.1+dfsg-1) ...
-Setting up psmisc (23.2-1+deb10u1) ...
-Setting up libssl1.1:amd64 (1.1.1n-0+deb10u6) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-Setting up libsnappy1v5:amd64 (1.1.7-1) ...
-Setting up libwrap0:amd64 (7.6.q-28) ...
-Setting up socat (1.7.3.2-2) ...
-Setting up libncurses6:amd64 (6.1+20181013-2+deb10u3) ...
-Setting up libmariadb3:amd64 (1:10.3.39-0+deb10u1) ...
-Setting up lsof (4.91+dfsg-1) ...
-Setting up galera-3 (25.3.25-2) ...
-Setting up netbase (5.6) ...
-Setting up libaio1:amd64 (0.3.112-3) ...
-Setting up libgdbm6:amd64 (1.18.1-4) ...
-Setting up libpopt0:amd64 (1.16-12) ...
-Setting up mariadb-server-core-10.3 (1:10.3.39-0+deb10u1) ...
-Setting up libgdbm-compat4:amd64 (1.18.1-4) ...
-Setting up libperl5.28:amd64 (5.28.1-6+deb10u1) ...
-Setting up mariadb-client-core-10.3 (1:10.3.39-0+deb10u1) ...
-Setting up rsync (3.1.3-6) ...
-invoke-rc.d: could not determine current runlevel
-invoke-rc.d: policy-rc.d denied execution of restart.
-Setting up perl (5.28.1-6+deb10u1) ...
-Setting up mariadb-client-10.3 (1:10.3.39-0+deb10u1) ...
-Setting up libio-html-perl (1.001-1) ...
-Setting up libtimedate-perl (2.3000-2+deb10u1) ...
-Setting up libfcgi-perl (0.78-2+b3) ...
-Setting up libterm-readkey-perl (2.38-1) ...
-Setting up liburi-perl (1.76-1) ...
-Setting up libdbi-perl:amd64 (1.642-1+deb10u2) ...
-Setting up libhttp-date-perl (6.02-1) ...
-Setting up libhtml-tagset-perl (3.20-3) ...
-Setting up liblwp-mediatypes-perl (6.02-1) ...
-Setting up libencode-locale-perl (1.05-1) ...
-Setting up libdbd-mysql-perl:amd64 (4.050-2) ...
-Setting up libhtml-parser-perl (3.72-3+b3) ...
-Setting up mariadb-server-10.3 (1:10.3.39-0+deb10u1) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-invoke-rc.d: could not determine current runlevel
-invoke-rc.d: policy-rc.d denied execution of start.
-Setting up libhttp-message-perl (6.18-1) ...
-Setting up libcgi-pm-perl (4.40-1) ...
-Setting up libhtml-template-perl (2.97-1) ...
-Setting up mariadb-server (1:10.3.39-0+deb10u1) ...
-Setting up libcgi-fast-perl (1:2.13-1) ...
-Processing triggers for libc-bin (2.28-10+deb10u2) ...
-Removing intermediate container 02d826d318f7
- ---> f1f3f2ecf9e1
-Step 4/8 : EXPOSE 3306
- ---> Running in 0290b0cee0fc
-Removing intermediate container 0290b0cee0fc
- ---> 00e01c7a7454
-Step 5/8 : COPY ./conf/50-server.cnf /etc/mysql/mariadb.conf.d/
- ---> 91440abbd979
-Step 6/8 : COPY ./tools /var/www/
- ---> 237b1017409f
-Step 7/8 : RUN service mysql start && mysql < /var/www/initial_db.sql && rm -f /var/www/initial_db.sql;
- ---> Running in eceb1af896a7
-Starting MariaDB database server: mysqld.
-Removing intermediate container eceb1af896a7
- ---> d5410379dfa9
-Step 8/8 : CMD ["mysqld"]
- ---> Running in 7302fb59bd9d
-Removing intermediate container 7302fb59bd9d
- ---> 754046d1a392
-Successfully built 754046d1a392
-Successfully tagged srcs_mariadb:latest
-[33mWARNING[0m: Image for service mariadb was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
-Building wordpress
-Sending build context to Docker daemon  9.728kB
-Step 1/9 : FROM debian:buster
- ---> 4ad95f81332e
-Step 2/9 : RUN apt-get update
- ---> Using cache
- ---> bfe72c00bf1d
-Step 3/9 : RUN apt-get -y install php7.3 php-mysqli php-fpm wget sendmail
- ---> Running in deb72e50ad58
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  bzip2 ca-certificates file libapparmor1 libargon2-1 libbsd0 libedit2
-  libgdbm-compat4 libgdbm6 libgpm2 libicu63 libldap-2.4-2 libldap-common
-  liblockfile-bin liblockfile1 libmagic-mgc libmagic1 libncurses6 libpcre2-8-0
-  libperl5.28 libprocps7 libpsl5 libsasl2-2 libsasl2-modules
-  libsasl2-modules-db libsigsegv2 libsodium23 libssl1.1 libwrap0 libxml2
-  lockfile-progs lsb-base m4 make mime-support netbase openssl perl
-  perl-modules-5.28 php-common php7.3-cli php7.3-common php7.3-fpm php7.3-json
-  php7.3-opcache php7.3-readline procmail procps psmisc publicsuffix
-  sendmail-base sendmail-bin sendmail-cf sensible-mda sensible-utils ucf
-  xz-utils
-Suggested packages:
-  bzip2-doc gdbm-l10n gpm libsasl2-modules-gssapi-mit
-  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
-  libsasl2-modules-sql m4-doc make-doc perl-doc libterm-readline-gnu-perl
-  | libterm-readline-perl-perl libb-debug-perl liblocale-codes-perl php-pear
-  sendmail-doc rmail logcheck logrotate resolvconf sasl2-bin
-The following NEW packages will be installed:
-  bzip2 ca-certificates file libapparmor1 libargon2-1 libbsd0 libedit2
-  libgdbm-compat4 libgdbm6 libgpm2 libicu63 libldap-2.4-2 libldap-common
-  liblockfile-bin liblockfile1 libmagic-mgc libmagic1 libncurses6 libpcre2-8-0
-  libperl5.28 libprocps7 libpsl5 libsasl2-2 libsasl2-modules
-  libsasl2-modules-db libsigsegv2 libsodium23 libssl1.1 libwrap0 libxml2
-  lockfile-progs lsb-base m4 make mime-support netbase openssl perl
-  perl-modules-5.28 php-common php-fpm php7.3 php7.3-cli php7.3-common
-  php7.3-fpm php7.3-json php7.3-mysql php7.3-opcache php7.3-readline procmail
-  procps psmisc publicsuffix sendmail sendmail-base sendmail-bin sendmail-cf
-  sensible-mda sensible-utils ucf wget xz-utils
-0 upgraded, 62 newly installed, 0 to remove and 0 not upgraded.
-Need to get 29.2 MB of archives.
-After this operation, 127 MB of additional disk space will be used.
-Get:1 http://deb.debian.org/debian buster/main amd64 perl-modules-5.28 all 5.28.1-6+deb10u1 [2873 kB]
-Get:2 http://deb.debian.org/debian buster/main amd64 libgdbm6 amd64 1.18.1-4 [64.7 kB]
-Get:3 http://deb.debian.org/debian buster/main amd64 libgdbm-compat4 amd64 1.18.1-4 [44.1 kB]
-Get:4 http://deb.debian.org/debian buster/main amd64 libperl5.28 amd64 5.28.1-6+deb10u1 [3894 kB]
-Get:5 http://deb.debian.org/debian buster/main amd64 perl amd64 5.28.1-6+deb10u1 [204 kB]
-Get:6 http://deb.debian.org/debian buster/main amd64 libsigsegv2 amd64 2.12-2 [32.8 kB]
-Get:7 http://deb.debian.org/debian buster/main amd64 m4 amd64 1.4.18-2 [203 kB]
-Get:8 http://deb.debian.org/debian buster/main amd64 make amd64 4.2.1-1.2 [341 kB]
-Get:9 http://deb.debian.org/debian buster/main amd64 netbase all 5.6 [19.4 kB]
-Get:10 http://deb.debian.org/debian buster/main amd64 liblockfile-bin amd64 1.14-1.1 [19.7 kB]
-Get:11 http://deb.debian.org/debian buster/main amd64 liblockfile1 amd64 1.14-1.1 [16.2 kB]
-Get:12 http://deb.debian.org/debian buster/main amd64 lockfile-progs amd64 0.1.18 [10.4 kB]
-Get:13 http://deb.debian.org/debian buster/main amd64 sendmail-base all 8.15.2-14~deb10u1 [343 kB]
-Get:14 http://deb.debian.org/debian buster/main amd64 sendmail-cf all 8.15.2-14~deb10u1 [292 kB]
-Get:15 http://deb.debian.org/debian-security buster/updates/main amd64 libncurses6 amd64 6.1+20181013-2+deb10u3 [102 kB]
-Get:16 http://deb.debian.org/debian buster/main amd64 libprocps7 amd64 2:3.3.15-2 [61.7 kB]
-Get:17 http://deb.debian.org/debian buster/main amd64 lsb-base all 10.2019051400 [28.4 kB]
-Get:18 http://deb.debian.org/debian buster/main amd64 procps amd64 2:3.3.15-2 [259 kB]
-Get:19 http://deb.debian.org/debian buster/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-1+deb10u2 [69.2 kB]
-Get:20 http://deb.debian.org/debian buster/main amd64 libsasl2-2 amd64 2.1.27+dfsg-1+deb10u2 [106 kB]
-Get:21 http://deb.debian.org/debian buster/main amd64 libldap-common all 2.4.47+dfsg-3+deb10u7 [90.1 kB]
-Get:22 http://deb.debian.org/debian buster/main amd64 libldap-2.4-2 amd64 2.4.47+dfsg-3+deb10u7 [224 kB]
-Get:23 http://deb.debian.org/debian-security buster/updates/main amd64 libssl1.1 amd64 1.1.1n-0+deb10u6 [1552 kB]
-Get:24 http://deb.debian.org/debian buster/main amd64 libwrap0 amd64 7.6.q-28 [58.7 kB]
-Get:25 http://deb.debian.org/debian buster/main amd64 sendmail-bin amd64 8.15.2-14~deb10u1 [697 kB]
-Get:26 http://deb.debian.org/debian buster/main amd64 sensible-utils all 0.0.12 [15.8 kB]
-Get:27 http://deb.debian.org/debian-security buster/updates/main amd64 bzip2 amd64 1.0.6-9.2~deb10u2 [48.5 kB]
-Get:28 http://deb.debian.org/debian buster/main amd64 libmagic-mgc amd64 1:5.35-4+deb10u2 [242 kB]
-Get:29 http://deb.debian.org/debian buster/main amd64 libmagic1 amd64 1:5.35-4+deb10u2 [118 kB]
-Get:30 http://deb.debian.org/debian buster/main amd64 file amd64 1:5.35-4+deb10u2 [66.4 kB]
-Get:31 http://deb.debian.org/debian buster/main amd64 libicu63 amd64 63.1-6+deb10u3 [8293 kB]
-Get:32 http://deb.debian.org/debian-security buster/updates/main amd64 libxml2 amd64 2.9.4+dfsg1-7+deb10u6 [690 kB]
-Get:33 http://deb.debian.org/debian buster/main amd64 mime-support all 3.62 [37.2 kB]
-Get:34 http://deb.debian.org/debian buster/main amd64 ucf all 3.0038+nmu1 [69.0 kB]
-Get:35 http://deb.debian.org/debian-security buster/updates/main amd64 libpcre2-8-0 amd64 10.32-5+deb10u1 [213 kB]
-Get:36 http://deb.debian.org/debian buster/main amd64 libpsl5 amd64 0.20.2-2 [53.7 kB]
-Get:37 http://deb.debian.org/debian buster/main amd64 wget amd64 1.20.1-1.1 [902 kB]
-Get:38 http://deb.debian.org/debian buster/main amd64 xz-utils amd64 5.2.4-1+deb10u1 [183 kB]
-Get:39 http://deb.debian.org/debian-security buster/updates/main amd64 openssl amd64 1.1.1n-0+deb10u6 [855 kB]
-Get:40 http://deb.debian.org/debian buster/main amd64 ca-certificates all 20200601~deb10u2 [166 kB]
-Get:41 http://deb.debian.org/debian buster/main amd64 libapparmor1 amd64 2.13.2-10 [94.7 kB]
-Get:42 http://deb.debian.org/debian buster/main amd64 libargon2-1 amd64 0~20171227-0.2 [19.6 kB]
-Get:43 http://deb.debian.org/debian buster/main amd64 libbsd0 amd64 0.9.1-2+deb10u1 [99.5 kB]
-Get:44 http://deb.debian.org/debian buster/main amd64 libedit2 amd64 3.1-20181209-1 [94.0 kB]
-Get:45 http://deb.debian.org/debian buster/main amd64 libgpm2 amd64 1.20.7-5 [35.1 kB]
-Get:46 http://deb.debian.org/debian buster/main amd64 libsasl2-modules amd64 2.1.27+dfsg-1+deb10u2 [104 kB]
-Get:47 http://deb.debian.org/debian buster/main amd64 libsodium23 amd64 1.0.17-1 [158 kB]
-Get:48 http://deb.debian.org/debian buster/main amd64 psmisc amd64 23.2-1+deb10u1 [126 kB]
-Get:49 http://deb.debian.org/debian buster/main amd64 php-common all 2:69 [15.0 kB]
-Get:50 http://deb.debian.org/debian-security buster/updates/main amd64 php7.3-common amd64 7.3.31-1~deb10u5 [962 kB]
-Get:51 http://deb.debian.org/debian-security buster/updates/main amd64 php7.3-json amd64 7.3.31-1~deb10u5 [18.6 kB]
-Get:52 http://deb.debian.org/debian-security buster/updates/main amd64 php7.3-opcache amd64 7.3.31-1~deb10u5 [184 kB]
-Get:53 http://deb.debian.org/debian-security buster/updates/main amd64 php7.3-readline amd64 7.3.31-1~deb10u5 [12.0 kB]
-Get:54 http://deb.debian.org/debian-security buster/updates/main amd64 php7.3-cli amd64 7.3.31-1~deb10u5 [1415 kB]
-Get:55 http://deb.debian.org/debian-security buster/updates/main amd64 php7.3-fpm amd64 7.3.31-1~deb10u5 [1428 kB]
-Get:56 http://deb.debian.org/debian buster/main amd64 php-fpm all 2:7.3+69 [6052 B]
-Get:57 http://deb.debian.org/debian-security buster/updates/main amd64 php7.3 all 7.3.31-1~deb10u5 [47.9 kB]
-Get:58 http://deb.debian.org/debian-security buster/updates/main amd64 php7.3-mysql amd64 7.3.31-1~deb10u5 [119 kB]
-Get:59 http://deb.debian.org/debian buster/main amd64 procmail amd64 3.22-26+deb10u1 [143 kB]
-Get:60 http://deb.debian.org/debian buster/main amd64 publicsuffix all 20220811.1734-0+deb10u1 [127 kB]
-Get:61 http://deb.debian.org/debian buster/main amd64 sensible-mda amd64 8.15.2-14~deb10u1 [225 kB]
-Get:62 http://deb.debian.org/debian buster/main amd64 sendmail all 8.15.2-14~deb10u1 [223 kB]
-[91mdebconf: delaying package configuration, since apt-utils is not installed
-[0mFetched 29.2 MB in 1s (34.6 MB/s)
-Selecting previously unselected package perl-modules-5.28.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6686 files and directories currently installed.)
-Preparing to unpack .../00-perl-modules-5.28_5.28.1-6+deb10u1_all.deb ...
-Unpacking perl-modules-5.28 (5.28.1-6+deb10u1) ...
-Selecting previously unselected package libgdbm6:amd64.
-Preparing to unpack .../01-libgdbm6_1.18.1-4_amd64.deb ...
-Unpacking libgdbm6:amd64 (1.18.1-4) ...
-Selecting previously unselected package libgdbm-compat4:amd64.
-Preparing to unpack .../02-libgdbm-compat4_1.18.1-4_amd64.deb ...
-Unpacking libgdbm-compat4:amd64 (1.18.1-4) ...
-Selecting previously unselected package libperl5.28:amd64.
-Preparing to unpack .../03-libperl5.28_5.28.1-6+deb10u1_amd64.deb ...
-Unpacking libperl5.28:amd64 (5.28.1-6+deb10u1) ...
-Selecting previously unselected package perl.
-Preparing to unpack .../04-perl_5.28.1-6+deb10u1_amd64.deb ...
-Unpacking perl (5.28.1-6+deb10u1) ...
-Selecting previously unselected package libsigsegv2:amd64.
-Preparing to unpack .../05-libsigsegv2_2.12-2_amd64.deb ...
-Unpacking libsigsegv2:amd64 (2.12-2) ...
-Selecting previously unselected package m4.
-Preparing to unpack .../06-m4_1.4.18-2_amd64.deb ...
-Unpacking m4 (1.4.18-2) ...
-Selecting previously unselected package make.
-Preparing to unpack .../07-make_4.2.1-1.2_amd64.deb ...
-Unpacking make (4.2.1-1.2) ...
-Selecting previously unselected package netbase.
-Preparing to unpack .../08-netbase_5.6_all.deb ...
-Unpacking netbase (5.6) ...
-Selecting previously unselected package liblockfile-bin.
-Preparing to unpack .../09-liblockfile-bin_1.14-1.1_amd64.deb ...
-Unpacking liblockfile-bin (1.14-1.1) ...
-Selecting previously unselected package liblockfile1:amd64.
-Preparing to unpack .../10-liblockfile1_1.14-1.1_amd64.deb ...
-Unpacking liblockfile1:amd64 (1.14-1.1) ...
-Selecting previously unselected package lockfile-progs.
-Preparing to unpack .../11-lockfile-progs_0.1.18_amd64.deb ...
-Unpacking lockfile-progs (0.1.18) ...
-Selecting previously unselected package sendmail-base.
-Preparing to unpack .../12-sendmail-base_8.15.2-14~deb10u1_all.deb ...
-Unpacking sendmail-base (8.15.2-14~deb10u1) ...
-Selecting previously unselected package sendmail-cf.
-Preparing to unpack .../13-sendmail-cf_8.15.2-14~deb10u1_all.deb ...
-Unpacking sendmail-cf (8.15.2-14~deb10u1) ...
-Selecting previously unselected package libncurses6:amd64.
-Preparing to unpack .../14-libncurses6_6.1+20181013-2+deb10u3_amd64.deb ...
-Unpacking libncurses6:amd64 (6.1+20181013-2+deb10u3) ...
-Selecting previously unselected package libprocps7:amd64.
-Preparing to unpack .../15-libprocps7_2%3a3.3.15-2_amd64.deb ...
-Unpacking libprocps7:amd64 (2:3.3.15-2) ...
-Selecting previously unselected package lsb-base.
-Preparing to unpack .../16-lsb-base_10.2019051400_all.deb ...
-Unpacking lsb-base (10.2019051400) ...
-Selecting previously unselected package procps.
-Preparing to unpack .../17-procps_2%3a3.3.15-2_amd64.deb ...
-Unpacking procps (2:3.3.15-2) ...
-Selecting previously unselected package libsasl2-modules-db:amd64.
-Preparing to unpack .../18-libsasl2-modules-db_2.1.27+dfsg-1+deb10u2_amd64.deb ...
-Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg-1+deb10u2) ...
-Selecting previously unselected package libsasl2-2:amd64.
-Preparing to unpack .../19-libsasl2-2_2.1.27+dfsg-1+deb10u2_amd64.deb ...
-Unpacking libsasl2-2:amd64 (2.1.27+dfsg-1+deb10u2) ...
-Selecting previously unselected package libldap-common.
-Preparing to unpack .../20-libldap-common_2.4.47+dfsg-3+deb10u7_all.deb ...
-Unpacking libldap-common (2.4.47+dfsg-3+deb10u7) ...
-Selecting previously unselected package libldap-2.4-2:amd64.
-Preparing to unpack .../21-libldap-2.4-2_2.4.47+dfsg-3+deb10u7_amd64.deb ...
-Unpacking libldap-2.4-2:amd64 (2.4.47+dfsg-3+deb10u7) ...
-Selecting previously unselected package libssl1.1:amd64.
-Preparing to unpack .../22-libssl1.1_1.1.1n-0+deb10u6_amd64.deb ...
-Unpacking libssl1.1:amd64 (1.1.1n-0+deb10u6) ...
-Selecting previously unselected package libwrap0:amd64.
-Preparing to unpack .../23-libwrap0_7.6.q-28_amd64.deb ...
-Unpacking libwrap0:amd64 (7.6.q-28) ...
-Selecting previously unselected package sendmail-bin.
-Preparing to unpack .../24-sendmail-bin_8.15.2-14~deb10u1_amd64.deb ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-Unpacking sendmail-bin (8.15.2-14~deb10u1) ...
-Selecting previously unselected package sensible-utils.
-Preparing to unpack .../25-sensible-utils_0.0.12_all.deb ...
-Unpacking sensible-utils (0.0.12) ...
-Selecting previously unselected package bzip2.
-Preparing to unpack .../26-bzip2_1.0.6-9.2~deb10u2_amd64.deb ...
-Unpacking bzip2 (1.0.6-9.2~deb10u2) ...
-Selecting previously unselected package libmagic-mgc.
-Preparing to unpack .../27-libmagic-mgc_1%3a5.35-4+deb10u2_amd64.deb ...
-Unpacking libmagic-mgc (1:5.35-4+deb10u2) ...
-Selecting previously unselected package libmagic1:amd64.
-Preparing to unpack .../28-libmagic1_1%3a5.35-4+deb10u2_amd64.deb ...
-Unpacking libmagic1:amd64 (1:5.35-4+deb10u2) ...
-Selecting previously unselected package file.
-Preparing to unpack .../29-file_1%3a5.35-4+deb10u2_amd64.deb ...
-Unpacking file (1:5.35-4+deb10u2) ...
-Selecting previously unselected package libicu63:amd64.
-Preparing to unpack .../30-libicu63_63.1-6+deb10u3_amd64.deb ...
-Unpacking libicu63:amd64 (63.1-6+deb10u3) ...
-Selecting previously unselected package libxml2:amd64.
-Preparing to unpack .../31-libxml2_2.9.4+dfsg1-7+deb10u6_amd64.deb ...
-Unpacking libxml2:amd64 (2.9.4+dfsg1-7+deb10u6) ...
-Selecting previously unselected package mime-support.
-Preparing to unpack .../32-mime-support_3.62_all.deb ...
-Unpacking mime-support (3.62) ...
-Selecting previously unselected package ucf.
-Preparing to unpack .../33-ucf_3.0038+nmu1_all.deb ...
-Moving old data out of the way
-Unpacking ucf (3.0038+nmu1) ...
-Selecting previously unselected package libpcre2-8-0:amd64.
-Preparing to unpack .../34-libpcre2-8-0_10.32-5+deb10u1_amd64.deb ...
-Unpacking libpcre2-8-0:amd64 (10.32-5+deb10u1) ...
-Selecting previously unselected package libpsl5:amd64.
-Preparing to unpack .../35-libpsl5_0.20.2-2_amd64.deb ...
-Unpacking libpsl5:amd64 (0.20.2-2) ...
-Selecting previously unselected package wget.
-Preparing to unpack .../36-wget_1.20.1-1.1_amd64.deb ...
-Unpacking wget (1.20.1-1.1) ...
-Selecting previously unselected package xz-utils.
-Preparing to unpack .../37-xz-utils_5.2.4-1+deb10u1_amd64.deb ...
-Unpacking xz-utils (5.2.4-1+deb10u1) ...
-Selecting previously unselected package openssl.
-Preparing to unpack .../38-openssl_1.1.1n-0+deb10u6_amd64.deb ...
-Unpacking openssl (1.1.1n-0+deb10u6) ...
-Selecting previously unselected package ca-certificates.
-Preparing to unpack .../39-ca-certificates_20200601~deb10u2_all.deb ...
-Unpacking ca-certificates (20200601~deb10u2) ...
-Selecting previously unselected package libapparmor1:amd64.
-Preparing to unpack .../40-libapparmor1_2.13.2-10_amd64.deb ...
-Unpacking libapparmor1:amd64 (2.13.2-10) ...
-Selecting previously unselected package libargon2-1:amd64.
-Preparing to unpack .../41-libargon2-1_0~20171227-0.2_amd64.deb ...
-Unpacking libargon2-1:amd64 (0~20171227-0.2) ...
-Selecting previously unselected package libbsd0:amd64.
-Preparing to unpack .../42-libbsd0_0.9.1-2+deb10u1_amd64.deb ...
-Unpacking libbsd0:amd64 (0.9.1-2+deb10u1) ...
-Selecting previously unselected package libedit2:amd64.
-Preparing to unpack .../43-libedit2_3.1-20181209-1_amd64.deb ...
-Unpacking libedit2:amd64 (3.1-20181209-1) ...
-Selecting previously unselected package libgpm2:amd64.
-Preparing to unpack .../44-libgpm2_1.20.7-5_amd64.deb ...
-Unpacking libgpm2:amd64 (1.20.7-5) ...
-Selecting previously unselected package libsasl2-modules:amd64.
-Preparing to unpack .../45-libsasl2-modules_2.1.27+dfsg-1+deb10u2_amd64.deb ...
-Unpacking libsasl2-modules:amd64 (2.1.27+dfsg-1+deb10u2) ...
-Selecting previously unselected package libsodium23:amd64.
-Preparing to unpack .../46-libsodium23_1.0.17-1_amd64.deb ...
-Unpacking libsodium23:amd64 (1.0.17-1) ...
-Selecting previously unselected package psmisc.
-Preparing to unpack .../47-psmisc_23.2-1+deb10u1_amd64.deb ...
-Unpacking psmisc (23.2-1+deb10u1) ...
-Selecting previously unselected package php-common.
-Preparing to unpack .../48-php-common_2%3a69_all.deb ...
-Unpacking php-common (2:69) ...
-Selecting previously unselected package php7.3-common.
-Preparing to unpack .../49-php7.3-common_7.3.31-1~deb10u5_amd64.deb ...
-Unpacking php7.3-common (7.3.31-1~deb10u5) ...
-Selecting previously unselected package php7.3-json.
-Preparing to unpack .../50-php7.3-json_7.3.31-1~deb10u5_amd64.deb ...
-Unpacking php7.3-json (7.3.31-1~deb10u5) ...
-Selecting previously unselected package php7.3-opcache.
-Preparing to unpack .../51-php7.3-opcache_7.3.31-1~deb10u5_amd64.deb ...
-Unpacking php7.3-opcache (7.3.31-1~deb10u5) ...
-Selecting previously unselected package php7.3-readline.
-Preparing to unpack .../52-php7.3-readline_7.3.31-1~deb10u5_amd64.deb ...
-Unpacking php7.3-readline (7.3.31-1~deb10u5) ...
-Selecting previously unselected package php7.3-cli.
-Preparing to unpack .../53-php7.3-cli_7.3.31-1~deb10u5_amd64.deb ...
-Unpacking php7.3-cli (7.3.31-1~deb10u5) ...
-Selecting previously unselected package php7.3-fpm.
-Preparing to unpack .../54-php7.3-fpm_7.3.31-1~deb10u5_amd64.deb ...
-Unpacking php7.3-fpm (7.3.31-1~deb10u5) ...
-Selecting previously unselected package php-fpm.
-Preparing to unpack .../55-php-fpm_2%3a7.3+69_all.deb ...
-Unpacking php-fpm (2:7.3+69) ...
-Selecting previously unselected package php7.3.
-Preparing to unpack .../56-php7.3_7.3.31-1~deb10u5_all.deb ...
-Unpacking php7.3 (7.3.31-1~deb10u5) ...
-Selecting previously unselected package php7.3-mysql.
-Preparing to unpack .../57-php7.3-mysql_7.3.31-1~deb10u5_amd64.deb ...
-Unpacking php7.3-mysql (7.3.31-1~deb10u5) ...
-Selecting previously unselected package procmail.
-Preparing to unpack .../58-procmail_3.22-26+deb10u1_amd64.deb ...
-Unpacking procmail (3.22-26+deb10u1) ...
-Selecting previously unselected package publicsuffix.
-Preparing to unpack .../59-publicsuffix_20220811.1734-0+deb10u1_all.deb ...
-Unpacking publicsuffix (20220811.1734-0+deb10u1) ...
-Selecting previously unselected package sensible-mda.
-Preparing to unpack .../60-sensible-mda_8.15.2-14~deb10u1_amd64.deb ...
-Unpacking sensible-mda (8.15.2-14~deb10u1) ...
-Selecting previously unselected package sendmail.
-Preparing to unpack .../61-sendmail_8.15.2-14~deb10u1_all.deb ...
-Unpacking sendmail (8.15.2-14~deb10u1) ...
-Setting up perl-modules-5.28 (5.28.1-6+deb10u1) ...
-Setting up lsb-base (10.2019051400) ...
-Setting up libapparmor1:amd64 (2.13.2-10) ...
-Setting up libpsl5:amd64 (0.20.2-2) ...
-Setting up libsodium23:amd64 (1.0.17-1) ...
-Setting up libgpm2:amd64 (1.20.7-5) ...
-Setting up liblockfile-bin (1.14-1.1) ...
-Setting up mime-support (3.62) ...
-Setting up libmagic-mgc (1:5.35-4+deb10u2) ...
-Setting up psmisc (23.2-1+deb10u1) ...
-Setting up libssl1.1:amd64 (1.1.1n-0+deb10u6) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-Setting up libargon2-1:amd64 (0~20171227-0.2) ...
-Setting up libprocps7:amd64 (2:3.3.15-2) ...
-Setting up libsasl2-modules:amd64 (2.1.27+dfsg-1+deb10u2) ...
-Setting up libmagic1:amd64 (1:5.35-4+deb10u2) ...
-Setting up file (1:5.35-4+deb10u2) ...
-Setting up bzip2 (1.0.6-9.2~deb10u2) ...
-Setting up libldap-common (2.4.47+dfsg-3+deb10u7) ...
-Setting up libicu63:amd64 (63.1-6+deb10u3) ...
-Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg-1+deb10u2) ...
-Setting up libwrap0:amd64 (7.6.q-28) ...
-Setting up make (4.2.1-1.2) ...
-Setting up libncurses6:amd64 (6.1+20181013-2+deb10u3) ...
-Setting up libsigsegv2:amd64 (2.12-2) ...
-Setting up xz-utils (5.2.4-1+deb10u1) ...
-update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
-Setting up libpcre2-8-0:amd64 (10.32-5+deb10u1) ...
-Setting up libsasl2-2:amd64 (2.1.27+dfsg-1+deb10u2) ...
-Setting up procmail (3.22-26+deb10u1) ...
-Setting up sensible-utils (0.0.12) ...
-Setting up procps (2:3.3.15-2) ...
-update-alternatives: using /usr/bin/w.procps to provide /usr/bin/w (w) in auto mode
-Setting up netbase (5.6) ...
-Setting up liblockfile1:amd64 (1.14-1.1) ...
-Setting up openssl (1.1.1n-0+deb10u6) ...
-Setting up libbsd0:amd64 (0.9.1-2+deb10u1) ...
-Setting up publicsuffix (20220811.1734-0+deb10u1) ...
-Setting up libxml2:amd64 (2.9.4+dfsg1-7+deb10u6) ...
-Setting up libgdbm6:amd64 (1.18.1-4) ...
-Setting up php-common (2:69) ...
-Setting up wget (1.20.1-1.1) ...
-Setting up libedit2:amd64 (3.1-20181209-1) ...
-Setting up libldap-2.4-2:amd64 (2.4.47+dfsg-3+deb10u7) ...
-Setting up m4 (1.4.18-2) ...
-Setting up ca-certificates (20200601~deb10u2) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-Updating certificates in /etc/ssl/certs...
-137 added, 0 removed; done.
-Setting up lockfile-progs (0.1.18) ...
-Setting up libgdbm-compat4:amd64 (1.18.1-4) ...
-Setting up ucf (3.0038+nmu1) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-Setting up libperl5.28:amd64 (5.28.1-6+deb10u1) ...
-Setting up sendmail-cf (8.15.2-14~deb10u1) ...
-Setting up perl (5.28.1-6+deb10u1) ...
-Setting up php7.3-common (7.3.31-1~deb10u5) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/calendar.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/ctype.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/exif.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/fileinfo.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/ftp.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/gettext.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/iconv.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/pdo.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/phar.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/posix.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/shmop.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/sockets.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/sysvmsg.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/sysvsem.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/sysvshm.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/tokenizer.ini with new version
-Setting up php7.3-mysql (7.3.31-1~deb10u5) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/mysqlnd.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/mysqli.ini with new version
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/pdo_mysql.ini with new version
-Setting up php7.3-opcache (7.3.31-1~deb10u5) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/opcache.ini with new version
-Setting up php7.3-json (7.3.31-1~deb10u5) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/json.ini with new version
-Setting up php7.3-readline (7.3.31-1~deb10u5) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/mods-available/readline.ini with new version
-Setting up sendmail-base (8.15.2-14~deb10u1) ...
-adduser: Warning: The home directory `/var/lib/sendmail' does not belong to the user you are currently creating.
-Setting up php7.3-cli (7.3.31-1~deb10u5) ...
-update-alternatives: using /usr/bin/php7.3 to provide /usr/bin/php (php) in auto mode
-update-alternatives: using /usr/bin/phar7.3 to provide /usr/bin/phar (phar) in auto mode
-update-alternatives: using /usr/bin/phar.phar7.3 to provide /usr/bin/phar.phar (phar.phar) in auto mode
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/cli/php.ini with new version
-Setting up sendmail-bin (8.15.2-14~deb10u1) ...
-update-alternatives: using /usr/lib/sm.bin/sendmail to provide /usr/sbin/sendmail-mta (sendmail-mta) in auto mode
-update-alternatives: using /usr/lib/sm.bin/sendmail to provide /usr/sbin/sendmail-msp (sendmail-msp) in auto mode
-
-You are doing a new install, or have erased /etc/mail/sendmail.mc.
-If you've accidentaly erased /etc/mail/sendmail.mc, check /var/backups.
-
-I am creating a safe, default sendmail.mc for you and you can
-run sendmailconfig later if you need to change the defaults.
-
-Stopping Mail Transport Agent (MTA): sendmail.
-Updating sendmail environment ...
-Validating configuration.
-Writing configuration to /etc/mail/sendmail.conf.
-Writing /etc/cron.d/sendmail.
-Could not open /etc/mail/databases(No such file or directory), creating it.
-Could not open /etc/mail/sendmail.mc(No such file or directory)
-Reading configuration from /etc/mail/sendmail.conf.
-Validating configuration.
-Writing configuration to /etc/mail/sendmail.conf.
-Writing /etc/cron.d/sendmail.
-Turning off Host Status collection
-Could not open /etc/mail/databases(No such file or directory), creating it.
-Reading configuration from /etc/mail/sendmail.conf.
-Validating configuration.
-Creating /etc/mail/databases...
-
-Checking filesystem, this may take some time - it will not hang!
-  ...   Done.
- 
-Checking for installed MDAs...
-Adding link for newly extant program (mail.local)
-Adding link for newly extant program (procmail)
-sasl2-bin not installed, not configuring sendmail support.
-
-To enable sendmail SASL2 support at a later date, invoke "/usr/share/sendmail/update_auth"
-
- 
-Creating/Updating SSL(for TLS) information
-Creating /etc/mail/tls/starttls.m4...
-Creating SSL certificates for sendmail.
-Generating DSA parameters, 2048 bit long prime
-This could take some time
-..................+....+....+......+....+..............+....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*
-+...................+.+.............+.....+...+..........+..+.........+...........+....+..........................+.................+.....+.........+.....+.+.+............................+...................+...+.+.+..+......+..+..+...+.................+...........+.....................+..+....+......+........................+....+............+.....+............+..............+.+.......................+...............................+....+.+......+.....+..............+.....+.....+..+..+..............+..+................+...........+.+........+.....+.......+......+..+.+.........+......+.......................+.........+.......+....+.......+......+..+....+.............+......+.......+....+.+...+.....................+.....+..............................+..........................+.........................+......+..+...........+...+......+.........+....+..+.+....+........+...............+..+...........+.+.+.+...+.............+.......+........+..+...+................+...+...................................+.....+..+........+.........+........+...+...............+.+.....+........................+......+.+............+...........+....+......+..................+.............+...+..................+.....+.....+................+....+..............................+......+................+..+...+..+............................+.......................+.+.....................+..............................+........+.+...+........................+.+...............+.........+....+....+...+.....+..+.....+.+...+....................+..........+...+.+.....+.+.+................................+.............+......+..+.........................+.........+........+.............+............+...+..................................+...+.+.......+.......+.+..........+................+...............+.............+.....+...........+..........+.......+........+....+......+................................+..........+....+.......+......+........+............+......................+..+...+.....+.+..+.+...............+....................+.....+.............+............+......................................+.....+.........+............+...........+....+...............+...........................+....................+..+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*
-Generating RSA private key, 2048 bit long modulus (2 primes)
-...........................+++++
-.........+++++
-e is 65537 (0x010001)
-
-*** *** *** WARNING *** WARNING *** WARNING *** WARNING *** *** ***
-
-Everything you need to support STARTTLS (encrypted mail transmission
-and user authentication via certificates) is installed and configured
-but is *NOT* being used.
-
-To enable sendmail to use STARTTLS, you need to:
-1) Add this line to /etc/mail/sendmail.mc and optionally
-   to /etc/mail/submit.mc:
-  include(`/etc/mail/tls/starttls.m4')dnl
-2) Run sendmailconfig
-3) Restart sendmail
-
-
-Updating /etc/hosts.allow, adding "sendmail: all".
-
-Please edit /etc/hosts.allow and check the rules location to
-make sure your security measures have not been overridden -
-it is common to move the sendmail:all line to the *end* of
-the file, so your more selective rules take precedence.
-Checking {sendmail,submit}.mc and related databases...
-Reading configuration from /etc/mail/sendmail.conf.
-Validating configuration.
-Creating /etc/mail/databases...
-Reading configuration from /etc/mail/sendmail.conf.
-Validating configuration.
-Creating /etc/mail/databases...
-Reading configuration from /etc/mail/sendmail.conf.
-Validating configuration.
-Creating /etc/mail/Makefile...
-Reading configuration from /etc/mail/sendmail.conf.
-Validating configuration.
-Writing configuration to /etc/mail/sendmail.conf.
-Writing /etc/cron.d/sendmail.
-Disabling HOST statistics file(/var/lib/sendmail/host_status).
-Creating /etc/mail/sendmail.cf...
-Creating /etc/mail/submit.cf...
-Informational: confCR_FILE file empty: /etc/mail/relay-domains
-Warning: confCT_FILE source file not found: /etc/mail/trusted-users
- it was created
-Informational: confCT_FILE file empty: /etc/mail/trusted-users
-Warning: confCW_FILE source file not found: /etc/mail/local-host-names
- it was created
-Warning: access_db source file not found: /etc/mail/access
- it was created
-Updating /etc/mail/access...
-Linking /etc/aliases to /etc/mail/aliases
-Informational: ALIAS_FILE file empty: /etc/mail/aliases
-Updating /etc/mail/aliases...
-WARNING: local host name (deb72e50ad58) is not qualified; see cf/README: WHO AM I?
-/etc/mail/aliases: 0 aliases, longest 0 bytes, 0 bytes total
- 
-Warning: 3 database(s) sources
-	were not found, (but were created)
-	please investigate.
-invoke-rc.d: could not determine current runlevel
-invoke-rc.d: policy-rc.d denied execution of start.
-Setting up php7.3-fpm (7.3.31-1~deb10u5) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-
-Creating config file /etc/php/7.3/fpm/php.ini with new version
-invoke-rc.d: could not determine current runlevel
-invoke-rc.d: policy-rc.d denied execution of start.
-Setting up php7.3 (7.3.31-1~deb10u5) ...
-Setting up sensible-mda (8.15.2-14~deb10u1) ...
-Setting up php-fpm (2:7.3+69) ...
-Setting up sendmail (8.15.2-14~deb10u1) ...
-Processing triggers for libc-bin (2.28-10+deb10u2) ...
-Processing triggers for ca-certificates (20200601~deb10u2) ...
-Updating certificates in /etc/ssl/certs...
-0 added, 0 removed; done.
-Running hooks in /etc/ca-certificates/update.d...
-done.
-Removing intermediate container deb72e50ad58
- ---> 00b82cd3d959
-Step 4/9 : EXPOSE 9000
- ---> Running in 7d445e59f4a0
-Removing intermediate container 7d445e59f4a0
- ---> 2f2e3a8bbc8c
-Step 5/9 : COPY ./conf/www.conf /etc/php/7.3/fpm/pool.d
- ---> f21e2e7f1af2
-Step 6/9 : COPY ./tools /var/www/
- ---> 20941f719cfd
-Step 7/9 : RUN chmod +x /var/www/wordpress_start.sh
- ---> Running in 4e340cfc7b8e
-Removing intermediate container 4e340cfc7b8e
- ---> 0163d7e3466e
-Step 8/9 : ENTRYPOINT [ "/var/www/wordpress_start.sh" ]
- ---> Running in 135176e1f03d
-Removing intermediate container 135176e1f03d
- ---> 8f1812650075
-Step 9/9 : CMD ["/usr/sbin/php-fpm7.3", "--nodaemonize"]
- ---> Running in 5424002996cb
-Removing intermediate container 5424002996cb
- ---> 519df7ad9ff8
-Successfully built 519df7ad9ff8
-Successfully tagged srcs_wordpress:latest
-[33mWARNING[0m: Image for service wordpress was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
-Building nginx
-Sending build context to Docker daemon   5.12kB
-Step 1/7 : FROM debian:buster
- ---> 4ad95f81332e
-Step 2/7 : RUN apt-get update
- ---> Using cache
- ---> bfe72c00bf1d
-Step 3/7 : RUN apt-get install -y nginx openssl
- ---> Running in c5b7b88c0aba
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  fontconfig-config fonts-dejavu-core geoip-database libbsd0 libexpat1
-  libfontconfig1 libfreetype6 libgd3 libgeoip1 libicu63 libjbig0
-  libjpeg62-turbo libnginx-mod-http-auth-pam libnginx-mod-http-dav-ext
-  libnginx-mod-http-echo libnginx-mod-http-geoip
-  libnginx-mod-http-image-filter libnginx-mod-http-subs-filter
-  libnginx-mod-http-upstream-fair libnginx-mod-http-xslt-filter
-  libnginx-mod-mail libnginx-mod-stream libpng16-16 libssl1.1 libtiff5
-  libwebp6 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxml2 libxpm4
-  libxslt1.1 lsb-base nginx-common nginx-full sensible-utils ucf
-Suggested packages:
-  libgd-tools geoip-bin fcgiwrap nginx-doc ssl-cert ca-certificates
-The following NEW packages will be installed:
-  fontconfig-config fonts-dejavu-core geoip-database libbsd0 libexpat1
-  libfontconfig1 libfreetype6 libgd3 libgeoip1 libicu63 libjbig0
-  libjpeg62-turbo libnginx-mod-http-auth-pam libnginx-mod-http-dav-ext
-  libnginx-mod-http-echo libnginx-mod-http-geoip
-  libnginx-mod-http-image-filter libnginx-mod-http-subs-filter
-  libnginx-mod-http-upstream-fair libnginx-mod-http-xslt-filter
-  libnginx-mod-mail libnginx-mod-stream libpng16-16 libssl1.1 libtiff5
-  libwebp6 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxml2 libxpm4
-  libxslt1.1 lsb-base nginx nginx-common nginx-full openssl sensible-utils ucf
-0 upgraded, 41 newly installed, 0 to remove and 0 not upgraded.
-Need to get 20.7 MB of archives.
-After this operation, 64.6 MB of additional disk space will be used.
-Get:1 http://deb.debian.org/debian-security buster/updates/main amd64 libssl1.1 amd64 1.1.1n-0+deb10u6 [1552 kB]
-Get:2 http://deb.debian.org/debian buster/main amd64 sensible-utils all 0.0.12 [15.8 kB]
-Get:3 http://deb.debian.org/debian buster/main amd64 libicu63 amd64 63.1-6+deb10u3 [8293 kB]
-Get:4 http://deb.debian.org/debian-security buster/updates/main amd64 libxml2 amd64 2.9.4+dfsg1-7+deb10u6 [690 kB]
-Get:5 http://deb.debian.org/debian buster/main amd64 ucf all 3.0038+nmu1 [69.0 kB]
-Get:6 http://deb.debian.org/debian buster/main amd64 fonts-dejavu-core all 2.37-1 [1068 kB]
-Get:7 http://deb.debian.org/debian buster/main amd64 fontconfig-config all 2.13.1-2 [280 kB]
-Get:8 http://deb.debian.org/debian buster/main amd64 geoip-database all 20181108-1 [2449 kB]
-Get:9 http://deb.debian.org/debian buster/main amd64 libbsd0 amd64 0.9.1-2+deb10u1 [99.5 kB]
-Get:10 http://deb.debian.org/debian-security buster/updates/main amd64 libexpat1 amd64 2.2.6-2+deb10u6 [108 kB]
-Get:11 http://deb.debian.org/debian buster/main amd64 libpng16-16 amd64 1.6.36-6 [292 kB]
-Get:12 http://deb.debian.org/debian buster/main amd64 libfreetype6 amd64 2.9.1-3+deb10u3 [380 kB]
-Get:13 http://deb.debian.org/debian buster/main amd64 libfontconfig1 amd64 2.13.1-2 [346 kB]
-Get:14 http://deb.debian.org/debian buster/main amd64 libjpeg62-turbo amd64 1:1.5.2-2+deb10u1 [133 kB]
-Get:15 http://deb.debian.org/debian buster/main amd64 libjbig0 amd64 2.1-3.1+b2 [31.0 kB]
-Get:16 http://deb.debian.org/debian-security buster/updates/main amd64 libwebp6 amd64 0.6.1-2+deb10u3 [263 kB]
-Get:17 http://deb.debian.org/debian-security buster/updates/main amd64 libtiff5 amd64 4.1.0+git191117-2~deb10u8 [273 kB]
-Get:18 http://deb.debian.org/debian buster/main amd64 libxau6 amd64 1:1.0.8-1+b2 [19.9 kB]
-Get:19 http://deb.debian.org/debian buster/main amd64 libxdmcp6 amd64 1:1.1.2-3 [26.3 kB]
-Get:20 http://deb.debian.org/debian buster/main amd64 libxcb1 amd64 1.13.1-2 [137 kB]
-Get:21 http://deb.debian.org/debian-security buster/updates/main amd64 libx11-data all 2:1.6.7-1+deb10u3 [299 kB]
-Get:22 http://deb.debian.org/debian-security buster/updates/main amd64 libx11-6 amd64 2:1.6.7-1+deb10u3 [757 kB]
-Get:23 http://deb.debian.org/debian-security buster/updates/main amd64 libxpm4 amd64 1:3.5.12-1+deb10u1 [50.0 kB]
-Get:24 http://deb.debian.org/debian buster/main amd64 libgd3 amd64 2.2.5-5.2 [136 kB]
-Get:25 http://deb.debian.org/debian buster/main amd64 libgeoip1 amd64 1.6.12-1 [93.1 kB]
-Get:26 http://deb.debian.org/debian buster/main amd64 lsb-base all 10.2019051400 [28.4 kB]
-Get:27 http://deb.debian.org/debian-security buster/updates/main amd64 nginx-common all 1.14.2-2+deb10u5 [121 kB]
-Get:28 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-http-auth-pam amd64 1.14.2-2+deb10u5 [93.2 kB]
-Get:29 http://deb.debian.org/debian-security buster/updates/main amd64 libxslt1.1 amd64 1.1.32-2.2~deb10u2 [236 kB]
-Get:30 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-http-dav-ext amd64 1.14.2-2+deb10u5 [101 kB]
-Get:31 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-http-echo amd64 1.14.2-2+deb10u5 [105 kB]
-Get:32 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-http-geoip amd64 1.14.2-2+deb10u5 [94.5 kB]
-Get:33 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-http-image-filter amd64 1.14.2-2+deb10u5 [98.0 kB]
-Get:34 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-http-subs-filter amd64 1.14.2-2+deb10u5 [96.3 kB]
-Get:35 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-http-upstream-fair amd64 1.14.2-2+deb10u5 [96.4 kB]
-Get:36 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.14.2-2+deb10u5 [96.3 kB]
-Get:37 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-mail amd64 1.14.2-2+deb10u5 [126 kB]
-Get:38 http://deb.debian.org/debian-security buster/updates/main amd64 libnginx-mod-stream amd64 1.14.2-2+deb10u5 [147 kB]
-Get:39 http://deb.debian.org/debian-security buster/updates/main amd64 nginx-full amd64 1.14.2-2+deb10u5 [501 kB]
-Get:40 http://deb.debian.org/debian-security buster/updates/main amd64 nginx all 1.14.2-2+deb10u5 [88.9 kB]
-Get:41 http://deb.debian.org/debian-security buster/updates/main amd64 openssl amd64 1.1.1n-0+deb10u6 [855 kB]
-[91mdebconf: delaying package configuration, since apt-utils is not installed
-[0mFetched 20.7 MB in 1s (29.2 MB/s)
-Selecting previously unselected package libssl1.1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6686 files and directories currently installed.)
-Preparing to unpack .../00-libssl1.1_1.1.1n-0+deb10u6_amd64.deb ...
-Unpacking libssl1.1:amd64 (1.1.1n-0+deb10u6) ...
-Selecting previously unselected package sensible-utils.
-Preparing to unpack .../01-sensible-utils_0.0.12_all.deb ...
-Unpacking sensible-utils (0.0.12) ...
-Selecting previously unselected package libicu63:amd64.
-Preparing to unpack .../02-libicu63_63.1-6+deb10u3_amd64.deb ...
-Unpacking libicu63:amd64 (63.1-6+deb10u3) ...
-Selecting previously unselected package libxml2:amd64.
-Preparing to unpack .../03-libxml2_2.9.4+dfsg1-7+deb10u6_amd64.deb ...
-Unpacking libxml2:amd64 (2.9.4+dfsg1-7+deb10u6) ...
-Selecting previously unselected package ucf.
-Preparing to unpack .../04-ucf_3.0038+nmu1_all.deb ...
-Moving old data out of the way
-Unpacking ucf (3.0038+nmu1) ...
-Selecting previously unselected package fonts-dejavu-core.
-Preparing to unpack .../05-fonts-dejavu-core_2.37-1_all.deb ...
-Unpacking fonts-dejavu-core (2.37-1) ...
-Selecting previously unselected package fontconfig-config.
-Preparing to unpack .../06-fontconfig-config_2.13.1-2_all.deb ...
-Unpacking fontconfig-config (2.13.1-2) ...
-Selecting previously unselected package geoip-database.
-Preparing to unpack .../07-geoip-database_20181108-1_all.deb ...
-Unpacking geoip-database (20181108-1) ...
-Selecting previously unselected package libbsd0:amd64.
-Preparing to unpack .../08-libbsd0_0.9.1-2+deb10u1_amd64.deb ...
-Unpacking libbsd0:amd64 (0.9.1-2+deb10u1) ...
-Selecting previously unselected package libexpat1:amd64.
-Preparing to unpack .../09-libexpat1_2.2.6-2+deb10u6_amd64.deb ...
-Unpacking libexpat1:amd64 (2.2.6-2+deb10u6) ...
-Selecting previously unselected package libpng16-16:amd64.
-Preparing to unpack .../10-libpng16-16_1.6.36-6_amd64.deb ...
-Unpacking libpng16-16:amd64 (1.6.36-6) ...
-Selecting previously unselected package libfreetype6:amd64.
-Preparing to unpack .../11-libfreetype6_2.9.1-3+deb10u3_amd64.deb ...
-Unpacking libfreetype6:amd64 (2.9.1-3+deb10u3) ...
-Selecting previously unselected package libfontconfig1:amd64.
-Preparing to unpack .../12-libfontconfig1_2.13.1-2_amd64.deb ...
-Unpacking libfontconfig1:amd64 (2.13.1-2) ...
-Selecting previously unselected package libjpeg62-turbo:amd64.
-Preparing to unpack .../13-libjpeg62-turbo_1%3a1.5.2-2+deb10u1_amd64.deb ...
-Unpacking libjpeg62-turbo:amd64 (1:1.5.2-2+deb10u1) ...
-Selecting previously unselected package libjbig0:amd64.
-Preparing to unpack .../14-libjbig0_2.1-3.1+b2_amd64.deb ...
-Unpacking libjbig0:amd64 (2.1-3.1+b2) ...
-Selecting previously unselected package libwebp6:amd64.
-Preparing to unpack .../15-libwebp6_0.6.1-2+deb10u3_amd64.deb ...
-Unpacking libwebp6:amd64 (0.6.1-2+deb10u3) ...
-Selecting previously unselected package libtiff5:amd64.
-Preparing to unpack .../16-libtiff5_4.1.0+git191117-2~deb10u8_amd64.deb ...
-Unpacking libtiff5:amd64 (4.1.0+git191117-2~deb10u8) ...
-Selecting previously unselected package libxau6:amd64.
-Preparing to unpack .../17-libxau6_1%3a1.0.8-1+b2_amd64.deb ...
-Unpacking libxau6:amd64 (1:1.0.8-1+b2) ...
-Selecting previously unselected package libxdmcp6:amd64.
-Preparing to unpack .../18-libxdmcp6_1%3a1.1.2-3_amd64.deb ...
-Unpacking libxdmcp6:amd64 (1:1.1.2-3) ...
-Selecting previously unselected package libxcb1:amd64.
-Preparing to unpack .../19-libxcb1_1.13.1-2_amd64.deb ...
-Unpacking libxcb1:amd64 (1.13.1-2) ...
-Selecting previously unselected package libx11-data.
-Preparing to unpack .../20-libx11-data_2%3a1.6.7-1+deb10u3_all.deb ...
-Unpacking libx11-data (2:1.6.7-1+deb10u3) ...
-Selecting previously unselected package libx11-6:amd64.
-Preparing to unpack .../21-libx11-6_2%3a1.6.7-1+deb10u3_amd64.deb ...
-Unpacking libx11-6:amd64 (2:1.6.7-1+deb10u3) ...
-Selecting previously unselected package libxpm4:amd64.
-Preparing to unpack .../22-libxpm4_1%3a3.5.12-1+deb10u1_amd64.deb ...
-Unpacking libxpm4:amd64 (1:3.5.12-1+deb10u1) ...
-Selecting previously unselected package libgd3:amd64.
-Preparing to unpack .../23-libgd3_2.2.5-5.2_amd64.deb ...
-Unpacking libgd3:amd64 (2.2.5-5.2) ...
-Selecting previously unselected package libgeoip1:amd64.
-Preparing to unpack .../24-libgeoip1_1.6.12-1_amd64.deb ...
-Unpacking libgeoip1:amd64 (1.6.12-1) ...
-Selecting previously unselected package lsb-base.
-Preparing to unpack .../25-lsb-base_10.2019051400_all.deb ...
-Unpacking lsb-base (10.2019051400) ...
-Selecting previously unselected package nginx-common.
-Preparing to unpack .../26-nginx-common_1.14.2-2+deb10u5_all.deb ...
-Unpacking nginx-common (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-http-auth-pam.
-Preparing to unpack .../27-libnginx-mod-http-auth-pam_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-http-auth-pam (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libxslt1.1:amd64.
-Preparing to unpack .../28-libxslt1.1_1.1.32-2.2~deb10u2_amd64.deb ...
-Unpacking libxslt1.1:amd64 (1.1.32-2.2~deb10u2) ...
-Selecting previously unselected package libnginx-mod-http-dav-ext.
-Preparing to unpack .../29-libnginx-mod-http-dav-ext_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-http-dav-ext (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-http-echo.
-Preparing to unpack .../30-libnginx-mod-http-echo_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-http-echo (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-http-geoip.
-Preparing to unpack .../31-libnginx-mod-http-geoip_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-http-geoip (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-http-image-filter.
-Preparing to unpack .../32-libnginx-mod-http-image-filter_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-http-image-filter (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-http-subs-filter.
-Preparing to unpack .../33-libnginx-mod-http-subs-filter_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-http-subs-filter (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-http-upstream-fair.
-Preparing to unpack .../34-libnginx-mod-http-upstream-fair_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-http-upstream-fair (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-http-xslt-filter.
-Preparing to unpack .../35-libnginx-mod-http-xslt-filter_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-http-xslt-filter (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-mail.
-Preparing to unpack .../36-libnginx-mod-mail_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-mail (1.14.2-2+deb10u5) ...
-Selecting previously unselected package libnginx-mod-stream.
-Preparing to unpack .../37-libnginx-mod-stream_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking libnginx-mod-stream (1.14.2-2+deb10u5) ...
-Selecting previously unselected package nginx-full.
-Preparing to unpack .../38-nginx-full_1.14.2-2+deb10u5_amd64.deb ...
-Unpacking nginx-full (1.14.2-2+deb10u5) ...
-Selecting previously unselected package nginx.
-Preparing to unpack .../39-nginx_1.14.2-2+deb10u5_all.deb ...
-Unpacking nginx (1.14.2-2+deb10u5) ...
-Selecting previously unselected package openssl.
-Preparing to unpack .../40-openssl_1.1.1n-0+deb10u6_amd64.deb ...
-Unpacking openssl (1.1.1n-0+deb10u6) ...
-Setting up libexpat1:amd64 (2.2.6-2+deb10u6) ...
-Setting up lsb-base (10.2019051400) ...
-Setting up libxau6:amd64 (1:1.0.8-1+b2) ...
-Setting up libssl1.1:amd64 (1.1.1n-0+deb10u6) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-Setting up nginx-common (1.14.2-2+deb10u5) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-Setting up libjbig0:amd64 (2.1-3.1+b2) ...
-Setting up libicu63:amd64 (63.1-6+deb10u3) ...
-Setting up libjpeg62-turbo:amd64 (1:1.5.2-2+deb10u1) ...
-Setting up libnginx-mod-http-auth-pam (1.14.2-2+deb10u5) ...
-Setting up libx11-data (2:1.6.7-1+deb10u3) ...
-Setting up libpng16-16:amd64 (1.6.36-6) ...
-Setting up libwebp6:amd64 (0.6.1-2+deb10u3) ...
-Setting up fonts-dejavu-core (2.37-1) ...
-Setting up libnginx-mod-http-echo (1.14.2-2+deb10u5) ...
-Setting up libnginx-mod-http-subs-filter (1.14.2-2+deb10u5) ...
-Setting up sensible-utils (0.0.12) ...
-Setting up libgeoip1:amd64 (1.6.12-1) ...
-Setting up libtiff5:amd64 (4.1.0+git191117-2~deb10u8) ...
-Setting up geoip-database (20181108-1) ...
-Setting up openssl (1.1.1n-0+deb10u6) ...
-Setting up libbsd0:amd64 (0.9.1-2+deb10u1) ...
-Setting up libxml2:amd64 (2.9.4+dfsg1-7+deb10u6) ...
-Setting up libnginx-mod-mail (1.14.2-2+deb10u5) ...
-Setting up libxdmcp6:amd64 (1:1.1.2-3) ...
-Setting up libxcb1:amd64 (1.13.1-2) ...
-Setting up libnginx-mod-stream (1.14.2-2+deb10u5) ...
-Setting up libnginx-mod-http-upstream-fair (1.14.2-2+deb10u5) ...
-Setting up libnginx-mod-http-geoip (1.14.2-2+deb10u5) ...
-Setting up libfreetype6:amd64 (2.9.1-3+deb10u3) ...
-Setting up ucf (3.0038+nmu1) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-Setting up libxslt1.1:amd64 (1.1.32-2.2~deb10u2) ...
-Setting up libx11-6:amd64 (2:1.6.7-1+deb10u3) ...
-Setting up libnginx-mod-http-dav-ext (1.14.2-2+deb10u5) ...
-Setting up libxpm4:amd64 (1:3.5.12-1+deb10u1) ...
-Setting up fontconfig-config (2.13.1-2) ...
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
-debconf: falling back to frontend: Teletype
-Setting up libnginx-mod-http-xslt-filter (1.14.2-2+deb10u5) ...
-Setting up libfontconfig1:amd64 (2.13.1-2) ...
-Setting up libgd3:amd64 (2.2.5-5.2) ...
-Setting up libnginx-mod-http-image-filter (1.14.2-2+deb10u5) ...
-Setting up nginx-full (1.14.2-2+deb10u5) ...
-invoke-rc.d: could not determine current runlevel
-invoke-rc.d: policy-rc.d denied execution of start.
-Setting up nginx (1.14.2-2+deb10u5) ...
-Processing triggers for libc-bin (2.28-10+deb10u2) ...
-Removing intermediate container c5b7b88c0aba
- ---> ca97117fbd91
-Step 4/7 : EXPOSE 443
- ---> Running in ba29252fd9aa
-Removing intermediate container ba29252fd9aa
- ---> e41d93820f72
-Step 5/7 : RUN openssl req -x509 -nodes -days 365 -newkey rsa:4096 -keyout /etc/ssl/private.key -out /etc/ssl/certificate.crt -subj "/C=MA/ST=Benguerir/L=Benguerir/O=1337/CN=yel-mass.42.fr";
- ---> Running in 1e41fd8d8f10
-[91mGenerating a RSA private key
-.....[0m[91m..[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m+[0m[91m+[0m[91m+[0m[91m+[0m[91m
-[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m.[0m[91m+[0m[91m+[0m[91m+[0m[91m+[0m[91m
-[0m[91mwriting new private key to '/etc/ssl/private.key'
-[0m[91m-----
-[0mRemoving intermediate container 1e41fd8d8f10
- ---> 5f25aa71c6cc
-Step 6/7 : COPY ./conf/default /etc/nginx/sites-enabled/default
- ---> e4f013cc8725
-Step 7/7 : CMD ["nginx", "-g", "daemon off;"]
- ---> Running in 43c8076fc4ce
-Removing intermediate container 43c8076fc4ce
- ---> 3858b14dbc2a
-Successfully built 3858b14dbc2a
-Successfully tagged srcs_nginx:latest
-[33mWARNING[0m: Image for service nginx was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
-Creating mariadb ... 
-[1A[2KCreating mariadb ... [32mdone[0m[1BCreating wordpress ... 
-[1A[2KCreating wordpress ... [32mdone[0m[1BCreating nginx     ... 
-[1A[2KCreating nginx     ... [32mdone[0m[1BAttaching to mariadb, wordpress, nginx
-[33mnginx exited with code 0
-[0m[32mwordpress exited with code 0
-[0m[36mmariadb exited with code 0
-[0m[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kdocker-compose up[17Dcd -             [13D./inception/remove_all.sh[25Dcd                       [23Dscriptsource ~/.zshrc[15Dscript         [9Dvim ~/.zshrc[12Dscript      vim ~/.zshrc[?1l>[?2004l
-]2;vim ~/.zshrc]1;vim[?1006;1000h[?1002h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;16r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[16;1H"~/.zshrc" 103L, 3913B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[34m# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH[m[2;45H[K[3;1H[K[4;1H[38;5;130malias[m script=[31m"bash ./inception/remove_all.sh"[m
-
-[34m# Path to your oh-my-zsh installation.[m
-[38;5;130mexport[m ZSH=[31m"[m[35m$HOME[m[31m/.oh-my-zsh"[m
-
-[34m# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes[m
-ZSH_THEME=[31m"robbyrussell"[m
-
-[34m# Set list of themes to pick from when loading at random[m[16;64H4,20[10CTop[4;20H[?25h[?4mP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[27m[23m[29m[m[H[2J[?25l[1;1H[96m# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH[m
-
-[93malias[m script=[95m"bash ./inception/remove_all.sh"[m
-
-[96m# Path to your oh-my-zsh installation.[m
-[93mexport[m ZSH=[95m"[m[38;5;81m$HOME[m[95m/.oh-my-zsh"[m
-
-[96m# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes[m
-ZSH_THEME=[95m"robbyrussell"[m
-
-[96m# Set list of themes to pick from when loading at random[m[16;64H4,20[10CTop"~/.zshrc" 103L, 3913B[4;20H[?25h[?25l[16;54Hi[4;20H[16;54H [4;20H[16;1H[1m-- INSERT --[m[16;13H[K[16;64H4,20[10CTop[4;20H[?25h[?25l[16;67H1[4;21H[?25h[?25l[95m/inception/remove_all.sh"[m[4;45H[K[16;67H0[4;20H[?25h[?25l[95m~/inception/remove_all.sh"[m[16;67H1[4;21H[?25h[16;1H[K[4;20H[?25l[16;54H^[[4;20H[16;54H  [4;21H[16;64H4,20[10CTop[4;20H[?25h[?25l[16;54H:[4;20H[16;54H[K[16;1H:[?25hwq[?25l[?1006;1000l[?1002l[?2004l[>4;m"~/.zshrc" 103L, 3913B written[23;2t[23;1t
-[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hvim ~/.zshrc[12D~/inception/remove_all.sh[25D.[24C[25Ddocker-compose down      up  [17Dcd -             [13D./inception/remove_all.sh[25Dcd -                     [21Ddocker-compose updown[19D./inception/remove_all.sh[25D~[24C[25Dvim ~/.zshrc             [13D[12D            [12Dssource[1m [0m[0m ~/.zshrc[?1l>[?2004l
-]2;source ~/.zshrc]1;source[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsource ~/.zshrc[15Dvim[3P[9C   [12D~/inception/remove_all.sh[25Dvim ~/.zshrc             [13D[12Dsource ~/.zshrc[15D               [15Drrm -rf ~/mariadb/* ; rm -rf ~/wordpress/*[?1l>[?2004l
-]2;rm -rf ~/mariadb/*; rm -rf ~/wordpress/*]1;rmzsh: sure you want to delete all 12 files in /root/mariadb [yn]? y
-zsh: sure you want to delete all 21 files in /root/wordpress [yn]? y
-[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Krm -rf ~/mariadb/* ; rm -rf ~/wordpress/*[41Dsource[3C.zshrc                          [26D[15Dvim[3P[9C   [12D~/inception/remove_all.sh[25D.[24C[25Ddocker-compose down      up  downup  [?1l>[?2004l
-]2;docker-compose up]1;docker-composeCreating network "app-network" with driver "bridge"
-Creating volume "wp" with local driver
-Creating volume "db" with local driver
-Building mariadb
-Sending build context to Docker daemon  5.632kB
-Step 1/8 : FROM debian:buster
-buster: Pulling from library/debian
-
-[1A[2K0dfc3f78750b: Already exists [1BDigest: sha256:484cc8ab0d73f513e3f9bacd03424eb081bd90f594d7ebde42587843fdc242f3
-Status: Downloaded newer image for debian:buster
- ---> 4ad95f81332e
-Step 2/8 : RUN apt-get update
- ---> Running in 924b0b3170dd
-Get:1 http://deb.debian.org/debian buster InRelease [122 kB]
-Get:2 http://deb.debian.org/debian-security buster/updates InRelease [34.8 kB]
-Get:3 http://deb.debian.org/debian buster-updates InRelease [56.6 kB]
-Get:4 http://deb.debian.org/debian buster/main amd64 Packages [7909 kB]
-Get:5 http://deb.debian.org/debian-security buster/updates/main amd64 Packages [552 kB]
-Get:6 http://deb.debian.org/debian buster-updates/main amd64 Packages [8788 B]
-Fetched 8683 kB in 1s (7948 kB/s)
-Reading package lists...
-^CGracefully stopping... (press Ctrl+C again to force)
-[1m[7m#[27m[1m[0m                                                                                 ]2;root@debian:~/inception/new/srcs]1;..tion/new/srcs[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[H[2J[0m[27m[24m[J[01;32m➜  [36msrcs[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kdocker-compose up[17Drm -rf ~/mariadb/* ; rm -rf ~/wordpress/*[41Ddocker-compose up                        [24D[17D                 [17D../requirements[1m/[0m[0m             .  ssc
-[0mscalar            sched             screendump        scriptreplay    
-scandeps          scp               script                            
-[Jscanimage         [Jscp-dbus-service  [Jscriptlive        [J                [3A[0m[27m[24m[21Csc[Kr
-[J[J[0mscreendump    [Jscript        [Jscriptlive    [Jscriptreplay[J[A[0m[27m[24m[21Cscr[Keendump
-[J[7mscreendump  [0m  [Jscript        [Jscriptlive    [Jscriptreplay[J[A[0m[27m[24m[21Cscreendump[K
-[7mscreendump  [0m  [7mscreendump  [0m  [A[0m[27m[24m[21Cscreendump[Kipt    
-[14C[7mscript      [0m  screendump    [A[0m[27m[24m[21Cscript[K
-[J[A[27C[1m [0m[0m [?1l>[?2004l
-[J]2;bash ~/inception/remove_all.sh]1;script"docker stop" requires at least 1 argument.
-See 'docker stop --help'.
-
-Usage:  docker stop [OPTIONS] CONTAINER [CONTAI
