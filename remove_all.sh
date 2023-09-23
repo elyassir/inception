@@ -16,4 +16,12 @@ docker rmi $(docker images -q)
 
 docker volume rm $(docker volume ls -q)
 
+# Remove all networks
+
+docker network rm $(docker network ls -q)
+
+# Remove all volumes not used by at least one container
+
+
+
 # thanks to Copilot for all help
