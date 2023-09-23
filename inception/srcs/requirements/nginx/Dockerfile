@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM debian:buster
 
 EXPOSE 443
 
@@ -7,17 +7,20 @@ EXPOSE 443
 # this is not necessary because nginx will create it 
 # in alpine 3.14 
 
-RUN apk update && apk add nginx openssl
+RUN apt-get update -y && apt-get install nginx openssl -y
 
-RUN mkdir /var/www/html/
 COPY index.html /var/www/html/
 
 
 RUN mkdir /etc/nginx/ssl
 
-RUN openssl req -x509 -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/myhostname.key -out /etc/nginx/ssl/myhostname.crt -subj "/C=MO/L=/O=/OU=/CN="
-# i think there is no -nodes
+# RUN openssl req -x509 -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/myhostname.key -out /etc/nginx/ssl/myhostname.crt -subj "/C=MO/L=/O=/OU=/CN="
+# # i think there is no -nodes
 COPY conf/nginx.conf /etc/nginx/conf.d/default.conf
+
+RUN openssl genpkey -algorithm RSA -out /etc/nginx/ssl/private.key
+RUN openssl req -new -key /etc/nginx/ssl/private.key -out /etc/nginx/ssl/csr.pem -subj "/C=MA/ST=MA/L=Agadir/O=1337/CN=www.example.com"
+RUN openssl x509 -req -days 365 -in /etc/nginx/ssl/csr.pem -signkey /etc/nginx/ssl/private.key -out /etc/nginx/ssl/certificate.crt 
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
@@ -28,6 +31,11 @@ ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 # Read about how daemons work and whether it’s
 # a good idea to use them or not
+
+
+
+
+
 
 # mkdir : create a directory
 # /run/nginx : this is the directory where nginx.pid will be created
