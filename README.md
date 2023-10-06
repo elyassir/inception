@@ -48,8 +48,6 @@ This section shows the simplest way to build and run the stack using the provide
 # If you have docker-compose v1 installed
 docker-compose -f srcs/docker-compose.yml up --build -d
 
-# Or with the docker plugin (recommended on recent Docker installations)
-docker compose -f srcs/docker-compose.yml up --build -d
 ```
 
 2. Check running containers:
@@ -63,16 +61,9 @@ docker ps
 ```zsh
 # using docker-compose v1
 docker-compose -f srcs/docker-compose.yml down
-
-# using docker plugin
-docker compose -f srcs/docker-compose.yml down
 ```
 
-If this repository contains a useful `Makefile` at the root (it does), look for targets such as `build`, `up`, `down`, `clean` and `re` that might wrap the commands above. Run `make` or `make help` to see available targets:
-
-```zsh
-make help
-```
+If this repository contains a useful `Makefile` at the root (it does), look for targets such as `build`, `up`, `down`, `clean` and `re` that might wrap the commands above.
 
 ## Development notes
 
@@ -86,7 +77,7 @@ make help
 
 ```zsh
 # rebuild and restart all services
-docker compose -f srcs/docker-compose.yml up --build -d
+docker-compose -f srcs/docker-compose.yml up --build -d
 
 # or using the Makefile (if target exists)
 make re
@@ -95,7 +86,7 @@ make re
 - View logs of a specific service (replace `<service_name>` with the name from the compose file):
 
 ```zsh
-docker compose -f srcs/docker-compose.yml logs -f <service_name>
+docker-compose -f srcs/docker-compose.yml logs -f <service_name>
 ```
 
 - Enter a running container:
@@ -112,25 +103,3 @@ docker exec -it <container_name_or_id> /bin/sh
 - Ports already in use: check `docker ps` and `ss -tulpn` to find processes occupying required ports.
 
 - If a service fails on first run, check the service logs with `docker compose logs <service>` to get details.
-
-## Tests / Validation
-
-There are no bundled unit tests in this repository. Validation is primarily operational — building images and confirming services start properly.
-
-## Contributing
-
-Contributions are welcome. Before changing service configs or Dockerfiles:
-- Test builds locally
-- Keep changes small and document why you changed a config or Dockerfile
-
-## License
-
-Choose a license for your project if you want others to reuse it. If you don't want to set one yet, add a `LICENSE` file later.
-
----
-
-If you'd like, I can also:
-- Add a short `Makefile` section to this README describing the actual targets present.
-- Inspect `srcs/docker-compose.yml` and annotate the README with the list of services and ports configured.
-
-Tell me which of those you'd like next and I'll update the README accordingly.
