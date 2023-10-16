@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="root"></div>
+  </div>
+</body>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script async src="https://ga.jspm.io/npm:es-module-shims@1.7.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react?dev",
+    "react-dom/client": "https://esm.sh/react-dom/client?dev"
+  }
+}
+</script>
+<script type="text/babel" data-type="module">
+  /* 
+    Component: navbar
+  */
+  import React, { StrictMode } from 'react';
+
+  const Navbar = () => {
+    return (
+      <nav className="navbar">
+        <div className="nav-links">
+          <ul className="nav-links">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Me</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Skills</a>
+            </li>
+            <li>
+              <a href="#">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+        <div className="logo">
+          <img src="images/logo.png" alt="logo" className='logo' />
+        </div>
+      </nav>
+    );
+  };
+
+
+  const Section = () => {
+    return (
+      <div className="section">
+          <div className="content">
+            <h1>Welcome To My Website</h1>
+            <h1>Hi, I'm <span className="name">Yassir El Massafi</span></h1>
+            <p className="intro">I'm a Professional <span>Web Developer</span></p>
+            <botton className="btn">Hire me</botton>
+          </div>
+          <div className="image">
+            <img src="images/hero.png" alt="hero" />
+          </div>
+        </div>
+    );
+  };
+
+  import { createRoot } from 'react-dom/client';
+
+  import { useState } from 'react';
+
+  let App = function App() {
+    return (
+      <div>
+        <Navbar />
+        <Section />
+      </div>
+    );
+  }
+
+  const root = createRoot(document.getElementById('root'));
+  root.render(
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
+</script>
+<link rel="stylesheet" href="css/navbar.css" />
+
+</html>
