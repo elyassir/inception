@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  wordpress:
+    container_name: wordpress
+    build: ./build
+    ports:
+      - 80:80
+    volumes:
+      - ./val-mariadb:/var/lib/mysql

@@ -256,3 +256,11 @@ echo "ALTER USER 'root'@'localhost' IDENTIFIED BY '12345' ;" >> db1.sql
 echo "FLUSH PRIVILEGES;" >> db1.sql
 
 mysql < db1.sql
+
+
+# Docker Compose
+
+## What is Docker Compose?
+
+- Docker Compose is a tool for defining and running multi-container Docker applications.
+
