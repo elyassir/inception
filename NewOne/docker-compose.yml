@@ -5,6 +5,28 @@ services:
     container_name: wordpress
     build: ./build
     ports:
-      - 80:80
+      - 9000:9000
     volumes:
-      - ./val-mariadb:/var/lib/mysql
+      - ./val-wordpress:/var/www/html/
+      # - ./val-mariadb:/var/lib/
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    ports:
+      - 80:80
+    depends_on:
+      - wordpress
+    volumes:
+      - ./val-wordpress:/var/www/html/
+  # mariadb:
+  #   container_name: mariadb
+  #   build: ./mariadb
+  #   ports:
+  #     - 3306:3306
+  #   volumes:
+      # - ./val-mariadb:/var/lib/mysql
+
+
+
+# TODO: Search for a way to make the nginx work with the wordpress on port 9000 and change fpm's port to 9000 . √ done
+# TODO: Divide the dockerfile into two, one for the nginx and one for the wordpress , read more about network in docker-compose. , one network

@@ -1,0 +1,5 @@
+# ~: The tilde (~) is an operator used in Nginx to indicate that a regular expression is being used for matching. In this context, it tells Nginx to use a regular expression pattern to match the URL.
+
+# \: The backslash (\) is an escape character in regular expressions. In the regular expression \ .php$, the backslash is used to escape the dot (.) character. The dot is a special character in regular expressions that normally matches any character. By escaping it, we are specifying that we want to match the literal dot character.
+
+# $: The dollar sign ($) is used in regular expressions to represent the end of a line. In the regular expression \ .php$, it means that the pattern should match URLs that end with ".php."
