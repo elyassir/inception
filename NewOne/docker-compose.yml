@@ -1,6 +1,11 @@
 version: '3.8'
 
 services:
+  mariadb:
+    container_name: mariadb
+    build: ./mariadb
+    ports:
+      - 3306:3306
   wordpress:
     container_name: wordpress
     build: ./wordpress
@@ -8,28 +13,50 @@ services:
       - 9000:9000
     volumes:
       - ./val-wordpress:/var/www/html/
+    depends_on:
+      - mariadb
+
   nginx:
     container_name: nginx
     build: ./nginx
     ports:
       - 80:80
+      - 8080:8080
     depends_on:
-      - wordpress
+      - mariadb
     volumes:
       - ./val-wordpress:/var/www/html/
-  mariadb:
-    container_name: mariadb
-    build: ./mariadb
+      - ./val-adminer:/var/www2/html/
+
+  # Bonus part
+  adminer:
+    container_name: adminer
+    build: ./bonus/adminer
     ports:
-      - 3306:3306
+      - 8000:8000
+    volumes:
+      - ./val-adminer:/var/www2/html/
     depends_on:
-      - wordpress
+      - mariadb
 
 
 
 
 
 
-# TODO: Search for a way to make the nginx work with the wordpress on port 9000 and change fpm's port to 9000 . √ done
+
 # TODO: Divide the dockerfile into two, one for the nginx and one for the wordpress , read more about network in docker-compose. , one network
 # TODO: Make the mariadb work on separate container. √ done
+
+# TODO: create a volume to store the data of the mariadb.
+# TODO: Read about the docker-compose and how it works.
+# TODO: Read about network in docker-compose.
+# TODO: Why we need docker-compose.
+# TODO: Start the bonus part. (Adminer and then FTP server and then radis cache and then some useful service of your choice and then create a static web site showing your resume)
+
+# TODO: Read about FastCGI.
+
+# TODO: SSL certificate for nginx.
+# TODO: create an .env file for the docker-compose.
+
+# TODO: Khtaser depandicies of each container.

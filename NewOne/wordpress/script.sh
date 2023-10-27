@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 10
+
 echo "
 post_max_size = 64M
 memory_limit = 256M
@@ -21,11 +23,12 @@ cd /var/www/html/
 
 # -d checks if the path is a directory
 
+wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar;
+chmod +x wp-cli.phar;
+mv wp-cli.phar /usr/local/bin/wp;
+
 if [ ! -d "wordpress" ]; then
 
-    wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar;
-    chmod +x wp-cli.phar;
-    mv wp-cli.phar /usr/local/bin/wp;
     mkdir wordpress
     cd wordpress
     wp core download --allow-root;
@@ -34,14 +37,16 @@ if [ ! -d "wordpress" ]; then
 	sed -i "s/username_here/wpuser/g" wp-config.php;
 	sed -i "s/password_here/dbpassword/g" wp-config.php;
     sed -i "s/localhost/mariadb/g" wp-config.php;
-    wp core install --allow-root --url=10.11.41.184 --title=ft_server --admin_user=admin --admin_password=admin --admin_email=you@example.com
 
 
 else
 
+    cd wordpress
     echo "Wordpress already installed"
 
 fi
+
+wp core install --allow-root --url=10.11.41.184 --title=ft_server --admin_user=admin --admin_password=admin --admin_email=you@example.com
 
 service php7.3-fpm start
 
