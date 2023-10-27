@@ -1,11 +1,15 @@
 
 # inception
 
-  
+# Docker
 
-## Docker
+## Basic concepts (Theory Part)
+
+- Docker | Container | Image | Containerization | Virtualization | Hypervisor | Docker-Compose
 
 ### What is Docker?
+
+- Docker is an engine that used to run containers.
 
 - Docker is a tool designed to make it easier to create, deploy, and run applications by using containers.
 
@@ -31,7 +35,7 @@
 - Docker does not include a full copy of the host OS. Instead, they use the host machine’s kernel and rely on the host for system calls.
 
   
-  
+## Practical Part
 
 ## The most common commands are used in docker
 

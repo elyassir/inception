@@ -1,21 +1,11 @@
 #!/bin/bash
 
-# echo "create database"
-
-# mysql < /initial_db.sql
-
 mysql << EOF
-CREATE DATABASE IF NOT EXISTS wordpress;
-CREATE USER IF NOT EXISTS 'yel'@'%' IDENTIFIED BY '12345';
-GRANT ALL PRIVILEGES ON wordpress.* TO 'yel'@'%';
+CREATE DATABASE IF NOT EXISTS wpdb;
+CREATE USER IF NOT EXISTS 'wpuser'@'%' IDENTIFIED BY 'dbpassword';
+GRANT ALL PRIVILEGES ON wpdb.* TO 'wpuser'@'%';
 FLUSH PRIVILEGES;
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'root12345';
 EOF
-
-
-# echo "change port and bind-address"
 
 sed -i "s/#port/port/g" /etc/mysql/mariadb.conf.d/50-server.cnf
 sed -i "s/bind-address/#bind-address/g" /etc/mysql/mariadb.conf.d/50-server.cnf
-
-# echo "DB created"

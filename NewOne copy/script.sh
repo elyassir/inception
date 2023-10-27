@@ -3,30 +3,28 @@
 
 echo '
 server {
-listen 80;
-root /var/www/html/wordpress;
-index index.php index.html index.htm;
-server_name example.com;
+    listen 80;
+    root /var/www/html/wordpress;
+    index index.php index.html index.htm;
+    server_name example.com;
 
-access_log /var/log/nginx/wordpress_access.log;
-error_log /var/log/nginx/wordpress_error.log;
+    access_log /var/log/nginx/wordpress_access.log;
+    error_log /var/log/nginx/wordpress_error.log;
 
-client_max_body_size 64M;
+    client_max_body_size 64M;
 
-location / {
-try_files $uri $uri/ /index.php?$args;
-}
+    location / {
+        try_files $uri $uri/ /index.php?$is_args$args;
+    }
 
-location ~ \.php$ {
-try_files $uri =404;
-include /etc/nginx/fastcgi_params;
-fastcgi_read_timeout 3600s;
-fastcgi_buffer_size 128k;
-fastcgi_buffers 4 128k;
-fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-fastcgi_pass unix:/run/php/php7.3-fpm.sock;
-fastcgi_index index.php;
-}
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+    }
 
 }
 ' >  /etc/nginx/sites-available/default
@@ -48,15 +46,20 @@ GRANT ALL PRIVILEGES ON wpdb.* TO 'wpuser'@'localhost';
 FLUSH PRIVILEGES;
 EOF
 
-cd /var/www/html/
-wget https://wordpress.org/latest.tar.gz
-tar -xvzf latest.tar.gz
-cd wordpress
-cp wp-config-sample.php wp-config.php
+    cd /var/www/html/
+    wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar;
+	chmod +x wp-cli.phar;
+	mv wp-cli.phar /usr/local/bin/wp;
+    mkdir wordpress
+    cd wordpress
+    wp core download --allow-root;
+    cp wp-config-sample.php wp-config.php;
+	sed -i "s/database_name_here/wpdb/g" wp-config.php;
+	sed -i "s/username_here/wpuser/g" wp-config.php;
+	sed -i "s/password_here/dbpassword/g" wp-config.php;
+    wp core install --allow-root --url=10.11.41.184 --title=ft_server --admin_user=admin --admin_password=admin --admin_email=you@example.com
 
-sed -i "s/database_name_here/wpdb/g" wp-config.php
-sed -i "s/username_here/wpuser/g" wp-config.php
-sed -i "s/password_here/dbpassword/g" wp-config.php
++
 
 chown -R www-data:www-data /var/www/html/wordpress
 chmod -R 755 /var/www/html/wordpress
