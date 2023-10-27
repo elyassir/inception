@@ -207,7 +207,43 @@ docker exec -it <container_id> sh (or bash)
 
 ## Wordpress:
 
-  
+    for wordpress we need to install wp-cli
+    wp-cli is a command line interface for WordPress.
+    site of wp-cli: https://wp-cli.org/#:~:text=WP%2DCLI%20is%20the%20command,without%20using%20a%20web%20browser.
+
+    ```bash
+    
+    wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
+    # wget: is a command-line utility for downloading files from the web. (web get)
+
+    chmod +x wp-cli.phar
+
+    # Download WordPress core files.
+
+    ./wp-cli.phar core download --allow-root
+
+    # --allow-root: Allow wp-cli to be run as root. (use it to avoid errors)
+
+    # Create wp-config.php file.
+
+    cp wp-config-sample.php wp-config.php
+
+    sed -i "s/database_name_here/name_of_database/g" wp-config.php
+    sed -i "s/username_here/user_of_database/g" wp-config.php
+    sed -i "s/password_here/password_of_database/g" wp-config.php
+    sed -i "s/localhost/database_host/g" wp-config.php
+
+    # sed: is a stream editor.
+
+    # -i: is used to edit the file in place. (without creating a new file) ! test it
+    # "s/old/new/g": is used to replace the old string with the new string.
+
+    ./wp-cli.phar core install --url=ip_address --title=wordpress --admin_user=admin --admin_password=password --admin_email=email --allow-root
+
+    # resourses: https://blog.sucuri.net/2022/11/wp-cli-how-to-install-wordpress-via-ssh.html
+
+    ```
   
 
 ## Mariadb:
