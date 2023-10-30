@@ -1,18 +1,8 @@
 #!/bin/bash
 
-sleep 10
-
-echo "
-post_max_size = 64M
-memory_limit = 256M
-max_execution_time = 300
-upload_max_filesize = 32M
-date.timezone = America/Chicago
-" >> /etc/php/7.3/fpm/php.ini
-
 cd /var/www/html/
 
-sed -i "s/listen = \/run\/php\/php7.3-fpm.sock/listen = 9000/" "/etc/php/7.3/fpm/pool.d/www.conf";
+sed -i "s/listen = \/run\/php\/php7.3-fpm.sock/listen = 9000/" "/etc/php/7.3/fpm/pool.d/www.conf"
 
 
 mkdir -p /var/
@@ -25,7 +15,7 @@ cd /var/www/html/
 
 wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar;
 chmod +x wp-cli.phar;
-mv wp-cli.phar /usr/local/bin/wp;
+mv wp-cli.phar /bin/wp;
 
 if [ ! -d "wordpress" ]; then
 
@@ -38,15 +28,14 @@ if [ ! -d "wordpress" ]; then
 	sed -i "s/password_here/dbpassword/g" wp-config.php;
     sed -i "s/localhost/mariadb/g" wp-config.php;
 
-
 else
 
     cd wordpress
-    echo "Wordpress already installed"
 
 fi
 
 wp core install --allow-root --url=10.11.41.184 --title=ft_server --admin_user=admin --admin_password=admin --admin_email=you@example.com
+wp user create johndoe johndoe@example.com --role=editor --first_name=John --last_name=Doe --user_pass=johndoe --allow-root
 
 service php7.3-fpm start
 

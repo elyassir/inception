@@ -8,6 +8,6 @@ COPY script.sh /
 
 RUN chmod 755 /script.sh
 
-RUN service mysql start && ./script.sh  && rm -f /script.sh;
+RUN service mysql start && ./script.sh;
 
 CMD [ "mysqld" ]

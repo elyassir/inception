@@ -4,40 +4,27 @@ services:
   mariadb:
     container_name: mariadb
     build: ./mariadb
-    ports:
-      - 3306:3306
+    volumes:
+      - ./val-mariadb:/var/lib/
+    restart: always
   wordpress:
     container_name: wordpress
     build: ./wordpress
-    ports:
-      - 9000:9000
     volumes:
       - ./val-wordpress:/var/www/html/
     depends_on:
       - mariadb
-
+    restart: always
   nginx:
     container_name: nginx
     build: ./nginx
     ports:
       - 80:80
-      - 8080:8080
     depends_on:
       - mariadb
     volumes:
       - ./val-wordpress:/var/www/html/
-      - ./val-adminer:/var/www2/html/
-
-  # Bonus part
-  adminer:
-    container_name: adminer
-    build: ./bonus/adminer
-    ports:
-      - 8000:8000
-    volumes:
-      - ./val-adminer:/var/www2/html/
-    depends_on:
-      - mariadb
+    restart: always
 
 
 
@@ -45,8 +32,27 @@ services:
 
 
 
-# TODO: Divide the dockerfile into two, one for the nginx and one for the wordpress , read more about network in docker-compose. , one network
-# TODO: Make the mariadb work on separate container. √ done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# TODO: read more about network in docker-compose. one network
 
 # TODO: create a volume to store the data of the mariadb.
 # TODO: Read about the docker-compose and how it works.
