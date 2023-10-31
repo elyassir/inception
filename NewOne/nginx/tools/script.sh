@@ -3,10 +3,13 @@
 
 echo '
 server {
-    listen 80;
+    listen 443;
     root /var/www/html/wordpress;
     index index.php;
     server_name example.com;
+    ssl    on;
+    ssl_certificate    /inception.crt;
+    ssl_certificate_key    /inception.key;
 
     location / {
         try_files $uri $uri/ /index.php$is_args$args;

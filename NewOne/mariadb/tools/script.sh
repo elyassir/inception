@@ -1,5 +1,7 @@
 #!/bin/bash
 
+service mysql start
+
 mysql << EOF
 CREATE DATABASE IF NOT EXISTS wpdb;
 CREATE USER IF NOT EXISTS 'wpuser'@'%' IDENTIFIED BY 'dbpassword';

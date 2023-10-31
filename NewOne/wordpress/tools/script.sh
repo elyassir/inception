@@ -27,6 +27,9 @@ if [ ! -d "wordpress" ]; then
 	sed -i "s/username_here/wpuser/g" wp-config.php;
 	sed -i "s/password_here/dbpassword/g" wp-config.php;
     sed -i "s/localhost/mariadb/g" wp-config.php;
+    
+wp core install --allow-root --url=yel-mass.42.fr --title=ft_server --admin_user=admin --admin_password=admin --admin_email=you@example.com
+wp user create johndoe johndoe@example.com --role=editor --first_name=John --last_name=Doe --user_pass=johndoe --allow-root
 
 else
 
@@ -34,8 +37,6 @@ else
 
 fi
 
-wp core install --allow-root --url=10.11.41.184 --title=ft_server --admin_user=admin --admin_password=admin --admin_email=you@example.com
-wp user create johndoe johndoe@example.com --role=editor --first_name=John --last_name=Doe --user_pass=johndoe --allow-root
 
 service php7.3-fpm start
 

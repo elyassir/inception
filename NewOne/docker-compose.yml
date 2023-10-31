@@ -5,7 +5,7 @@ services:
     container_name: mariadb
     build: ./mariadb
     volumes:
-      - ./val-mariadb:/var/lib/
+      - db:/var/lib/mysql
     restart: always
   wordpress:
     container_name: wordpress
@@ -19,14 +19,20 @@ services:
     container_name: nginx
     build: ./nginx
     ports:
-      - 80:80
+      - 443:443
     depends_on:
       - mariadb
     volumes:
-      - ./val-wordpress:/var/www/html/
+      - /home/yel-mass/data/wordpress:/var/www/html/
     restart: always
 
-
+volumes:
+  db:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/yel-mass/data/mariadb
 
 
 
