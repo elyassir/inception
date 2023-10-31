@@ -10,4 +10,4 @@ COPY tools/script.sh .
 
 RUN chmod 777 script.sh
 
-ENTRYPOINT [ "./script.sh" ]tools
+ENTRYPOINT [ "./script.sh" ]
