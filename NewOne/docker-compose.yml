@@ -10,7 +10,6 @@ services:
       - .env
     networks:
       - inception
-    restart: always
   wordpress:
     container_name: wordpress
     build: ./wordpress
@@ -22,7 +21,6 @@ services:
       - .env
     networks:
       - inception
-    restart: always
   nginx:
     container_name: nginx
     build: ./nginx
