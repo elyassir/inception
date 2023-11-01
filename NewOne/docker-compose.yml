@@ -4,55 +4,55 @@ services:
   mariadb:
     container_name: mariadb
     build: ./mariadb
-    volumes:
-      - mariadb:/var/lib/mysql/
+    # volumes:
+    #   - mariadb:/var/lib/mysql/
     env_file:
       - .env
-    networks:
-      - inception
-  wordpress:
-    container_name: wordpress
-    build: ./wordpress
-    volumes:
-      - wordpress:/var/www/html/
-    depends_on:
-      - mariadb
-    env_file:
-      - .env
-    networks:
-      - inception
-  nginx:
-    container_name: nginx
-    build: ./nginx
-    ports:
-      - 443:443
-    depends_on:
-      - mariadb
-    volumes:
-      - wordpress:/var/www/html/
-    env_file:
-      - .env
-    networks:
-      - inception
-    restart: always
+    # networks:
+    #   - inception
+#   wordpress:
+#     container_name: wordpress
+#     build: ./wordpress
+#     volumes:
+#       - wordpress:/var/www/html/
+#     depends_on:
+#       - mariadb
+#     env_file:
+#       - .env
+#     networks:
+#       - inception
+#   nginx:
+#     container_name: nginx
+#     build: ./nginx
+#     ports:
+#       - 443:443
+#     depends_on:
+#       - mariadb
+#     volumes:
+#       - wordpress:/var/www/html/
+#     env_file:
+#       - .env
+#     networks:
+#       - inception
+#     restart: always
 
-volumes:
-  mariadb:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /home/yel-mass/data/mariadb/
-  wordpress:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /home/yel-mass/data/wordpress/
+# volumes:
+#   mariadb:
+#     driver: local
+#     driver_opts:
+#       type: none
+#       o: bind
+#       device: /home/yel-mass/data/mariadb/
+#   wordpress:
+#     driver: local
+#     driver_opts:
+#       type: none
+#       o: bind
+#       device: /home/yel-mass/data/wordpress/
 
-networks:
-  inception:
-    name: inception
+# networks:
+#   inception:
+#     name: inception
 
 
 

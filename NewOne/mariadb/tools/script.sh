@@ -1,15 +1,18 @@
 #!/bin/bash
 
-service mysql start # !
+service mysql start
 
-sleep 3
+sleep 1
 
-mysql << EOF
-CREATE DATABASE IF NOT EXISTS wp_db;
-CREATE USER IF NOT EXISTS 'wp_user'@'%' IDENTIFIED BY 'wp_password';
-GRANT ALL PRIVILEGES ON wp_db.* TO 'wp_user'@'%';
-FLUSH PRIVILEGES;
-EOF
+while true; do
+    sleep 1
+done
+
+# mysql -e "CREATE DATABASE IF NOT EXISTS wp_db;"
+# mysql -e "CREATE USER IF NOT EXISTS 'wp_user'@'%' IDENTIFIED BY 'wp_password';"
+# mysql -e "GRANT ALL PRIVILEGES ON wp_db.* TO 'wp_user'@'%';"
+# mysql -e "FLUSH PRIVILEGES;"
+
 
 sed -i "s/#port/port/g" /etc/mysql/mariadb.conf.d/50-server.cnf
 sed -i "s/bind-address/#bind-address/g" /etc/mysql/mariadb.conf.d/50-server.cnf
