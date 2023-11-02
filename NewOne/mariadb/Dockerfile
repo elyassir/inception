@@ -6,6 +6,6 @@ RUN apt-get install mariadb-server  procps -y
 
 COPY tools/script.sh .
 
-RUN chmod 755 script.sh
+RUN chmod +x script.sh
 
 CMD [ "./script.sh" ]

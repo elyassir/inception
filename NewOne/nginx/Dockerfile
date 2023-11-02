@@ -8,6 +8,6 @@ RUN openssl req -newkey rsa:2048 -nodes -x509 -out inception.crt -keyout incepti
 
 COPY tools/script.sh .
 
-RUN chmod 777 script.sh
+RUN chmod +x script.sh
 
 ENTRYPOINT [ "./script.sh" ]
