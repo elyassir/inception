@@ -1,42 +1,42 @@
 version: '3.8'
 
 services:
-  mariadb:
-    container_name: mariadb
-    build: ./mariadb
-    volumes:
-      - mariadb:/var/lib/mysql/
-    env_file:
-      - .env
-    networks:
-      - inception
-  wordpress:
-    container_name: wordpress
-    build: ./wordpress
-    volumes:
-      - wordpress:/var/www/html/
-    depends_on:
-      - mariadb
-    env_file:
-      - .env
-    networks:
-      - inception
-  nginx:
-    container_name: nginx
-    build: ./nginx
-    ports:
-      - 443:443
-      - 8080:8080
-    # depends_on:
-    #   - mariadb
-    volumes:
-      - wordpress:/var/www/html/
-      - ./val-adminer:/var/www2/html/
-    env_file:
-      - .env
-    networks:
-      - inception
-    restart: always
+  # mariadb:
+  #   container_name: mariadb
+  #   build: ./mariadb
+  #   volumes:
+  #     - mariadb:/var/lib/mysql/
+  #   env_file:
+  #     - .env
+  #   networks:
+  #     - inception
+  # wordpress:
+  #   container_name: wordpress
+  #   build: ./wordpress
+  #   volumes:
+  #     - wordpress:/var/www/html/
+  #   depends_on:
+  #     - mariadb
+  #   env_file:
+  #     - .env
+  #   networks:
+  #     - inception
+  # nginx:
+  #   container_name: nginx
+  #   build: ./nginx
+  #   ports:
+  #     - 443:443
+  #     - 8080:8080
+  #   depends_on:
+  #     - wordpress
+  #   volumes:
+  #     - wordpress:/var/www/html/
+  #     - ./val-adminer:/var/www2/html/
+  #   env_file:
+  #     - .env
+  #   networks:
+  #     - inception
+  #   restart: always
   ftp-server:
     container_name: ftp-server
     build: ./bonus/ftp-server/
@@ -46,35 +46,33 @@ services:
       - wordpress:/home/bca
     networks:
       - inception
-    depends_on:
-      - nginx
     ports:
       - "21:21"
       - "21000-21010:21000-21010"
-  portainer:
-    container_name: portainer
-    build: ./bonus/portainer/
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock:ro"
-    restart: always
-    depends_on:
-      - wordpress
-    networks:
-      - inception
-    ports:
-      - "9443:9443"
-      - "9000:9000"
-      - "8000:8000"
-  # Bonus part
-  adminer:
-    container_name: adminer
-    build: ./bonus/adminer
-    volumes:
-      - ./val-adminer:/var/www2/html/
-    depends_on:
-      - mariadb
-    networks:
-      - inception
+#   portainer:
+#     container_name: portainer
+#     build: ./bonus/portainer/
+#     volumes:
+#       - "/var/run/docker.sock:/var/run/docker.sock:ro"
+#     restart: always
+#     depends_on:
+#       - wordpress
+#     networks:
+#       - inception
+#     ports:
+#       - "9443:9443"
+#       - "9000:9000"
+#       - "8000:8000"
+#   # Bonus part
+#   adminer:
+#     container_name: adminer
+#     build: ./bonus/adminer
+#     volumes:
+#       - /home/yel-mass/data/adminer:/var/www2/html/
+#     depends_on:
+#       - mariadb
+#     networks:
+#       - inception
 
 volumes:
   mariadb:
