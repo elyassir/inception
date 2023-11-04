@@ -30,14 +30,11 @@ server {
     root /var/www2/html/adminer;
     index index.php;
     autoindex on;
-    location / {
-    }
+
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass adminer:7000;
     }
-    access_log /var/log/nginx/adminer-access.log;
-    error_log /var/log/nginx/adminer-error.log;
 }
 
 ' >  /etc/nginx/sites-available/default
