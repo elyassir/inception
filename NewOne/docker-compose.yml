@@ -28,7 +28,6 @@ services:
     build: ./requirements/nginx
     ports:
       - 443:443
-      - 8080:8080
     depends_on:
       - wordpress
     volumes:
@@ -45,7 +44,7 @@ services:
     build: ./requirements/bonus/ftp-server/
     env_file: .env
     volumes:
-      - wordpress:/home/bca
+      - wordpress:/home/ftp_user/
     networks:
       - inception
     ports:
@@ -67,10 +66,18 @@ services:
   adminer:
     container_name: adminer
     build: ./requirements/bonus/adminer
+    ports:
+      - 8080:8080
     volumes:
       - /home/yel-mass/data/adminer:/var/www2/html/
     depends_on:
       - mariadb
+    networks:
+      - inception
+    restart: always
+  redis:
+    container_name: redis
+    build: ./requirements/bonus/redis
     networks:
       - inception
     restart: always
@@ -128,8 +135,3 @@ networks:
 # TODO: Start the bonus part. (Adminer and then FTP server and then radis cache and then some useful service of your choice and then create a static web site showing your resume)
 
 # TODO: Read about FastCGI.
-
-# TODO: SSL certificate for nginx.
-# TODO: create an .env file for the docker-compose.
-
-# TODO: Khtaser depandicies of each container.

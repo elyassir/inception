@@ -2,18 +2,10 @@ FROM debian:buster
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN apt-get -y install nginx vim php-cgi php-common php-fpm php-pear php-mbstring php-zip php-net-socket php-gd php-xml-util php-gettext php-mysql php-bcmath unzip wget git -y
+RUN apt-get -y install php php-mysqli wget -y
 
 COPY tools/script.sh /
 
 RUN chmod +x /script.sh
 
 ENTRYPOINT [ "./script.sh" ]
-
-
-# apt-update && apt-get install wget php
-
-# php -S 0.0.0.0:8000
-
-# wget github.com/adminer 
-# mv latest.php index.php

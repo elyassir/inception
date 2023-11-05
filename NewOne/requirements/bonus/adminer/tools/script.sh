@@ -1,15 +1,9 @@
 #!/bin/bash
 
-# This script is used to run the adminer script
+mkdir -p /var/www/html/
 
-sed -i "s/listen = \/run\/php\/php7.3-fpm.sock/listen = 7000/" "/etc/php/7.3/fpm/pool.d/www.conf";
+wget https://www.adminer.org/latest.php -O /var/www/html/index.php
 
+cd /var/www/html/
 
-mkdir -p /var/www2
-mkdir -p /var/www2/html/adminer/
-wget https://www.adminer.org/latest.php -O /var/www2/html/adminer/index.php
-
-
-service php7.3-fpm start
-
-while true; do sleep 1000; done 
+php -S "0.0.0.0:8080"

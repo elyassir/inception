@@ -1,10 +1,13 @@
 FROM debian:buster
 
-RUN apt-get update
-RUN apt-get -y install php-common php-fpm php-pear php-mbstring php-net-socket php-gd php-mysql mariadb-client wget -y
+RUN apt-get update 
 
-COPY tools/script.sh .
+RUN apt-get install php7.3-fpm php7.3-mysql mariadb-client php-redis wget -y
+
+COPY tools/script.sh /script.sh
 
 RUN chmod +x script.sh
 
-ENTRYPOINT [ "./script.sh" ]
+CMD bash script.sh
+
+# Change it to ENTRYPOINT 

@@ -7,3 +7,7 @@ RUN apt-get update && \
 RUN curl -sSL https://github.com/portainer/portainer/releases/download/2.14.2/portainer-2.14.2-linux-amd64.tar.gz | tar -xzo -C /usr/local
 
 CMD ["/usr/local/portainer/portainer"]
+
+# Change it to ENTRYPOINT
+# remove /use/local/
+# read about tar -xzo -C 

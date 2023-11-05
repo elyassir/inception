@@ -22,6 +22,4 @@ docker network rm $(docker network ls -q);
 
 # Remove all volumes not used by at least one container
 
-
-
 # thanks to Copilot for all help
