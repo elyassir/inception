@@ -44,7 +44,7 @@ services:
     build: ./requirements/bonus/ftp-server/
     env_file: .env
     volumes:
-      - wordpress:/home/ftp_user/
+      - wordpress:/home/${FTP_USER}
     networks:
       - inception
     ports:
