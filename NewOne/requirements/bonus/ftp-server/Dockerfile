@@ -1,7 +1,11 @@
-FROM debian:buster
+FROM debian:bullseye
 
-RUN apt-get update && apt-get install -y vsftpd
+RUN apt-get update && apt-get upgrade -y
 
-COPY ./tools/script.sh script.sh
+RUN apt-get install -y vsftpd
 
-ENTRYPOINT [ "bash", "/script.sh" ]
+COPY ./conf/vsftpd.conf /etc/vsftpd.conf
+
+COPY tools/script.sh script.sh
+
+ENTRYPOINT ["bash", "script.sh"]

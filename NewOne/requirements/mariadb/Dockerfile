@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye
 
 RUN apt-get update
 
@@ -8,4 +8,4 @@ COPY tools/script.sh .
 
 RUN chmod +x script.sh
 
-ENTRYPOINT [ "bash", "/script.sh" ]
+ENTRYPOINT [ "bash", "script.sh" ]

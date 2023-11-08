@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service mysql start
+service mariadb start
 
 mysql << EOF
 CREATE DATABASE IF NOT EXISTS $DB_NAME;
@@ -12,6 +12,6 @@ EOF
 sed -i "s/#port/port/g" /etc/mysql/mariadb.conf.d/50-server.cnf
 sed -i "s/bind-address/#bind-address/g" /etc/mysql/mariadb.conf.d/50-server.cnf
 
-service mysql stop
+service mariadb stop
 
 mysqld

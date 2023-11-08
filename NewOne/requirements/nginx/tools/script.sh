@@ -1,17 +1,18 @@
 #!/bin/bash
 
-
 echo "
-
 server {
-    listen 443;
+    listen 443 ssl;
+
     server_name $DOMAIN_NAME;
     root /var/www/html/wordpress;
     index index.php;
 
     ssl    on;
-    ssl_certificate    /inception.crt;
-    ssl_certificate_key    /inception.key;
+    ssl_certificate    /etc/ssl/certs/inception.crt;
+    ssl_certificate_key    /etc/ssl/private/inception.key;
+
+    # ssl_protocols TLSv1.2;
 
     location / {
         try_files \$uri \$uri/ /index.php?\$args;

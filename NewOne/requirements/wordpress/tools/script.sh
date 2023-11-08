@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sed -i "s/listen/;listen/g" /etc/php/7.3/fpm/pool.d/www.conf
-echo "listen = 9000" >> /etc/php/7.3/fpm/pool.d/www.conf
+sed -i "s/listen/;listen/g" /etc/php/7.4/fpm/pool.d/www.conf
+echo "listen = 9000" >> /etc/php/7.4/fpm/pool.d/www.conf
 
 while true; do
     if mysql -u "wp_user" -p --password="wp_password" -h "mariadb" -e "USE "wp_db";" &> /dev/null; then
@@ -20,7 +20,6 @@ if [ ! -d "wordpress" ]; then
     mv wp-cli.phar /bin/wp;
 
     mkdir -p wordpress
-    rm -rf  /var/www/html/wordpress/*
     cd  wordpress
     wp core download  --allow-root
     cp wp-config-sample.php wp-config.php
@@ -51,4 +50,4 @@ fi
 
 mkdir -p /run/php
 
-exec /usr/sbin/php-fpm7.3 -F
+exec /usr/sbin/php-fpm7.4 -F
