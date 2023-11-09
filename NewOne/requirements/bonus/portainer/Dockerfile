@@ -6,10 +6,8 @@ RUN wget https://github.com/portainer/portainer/releases/download/2.14.2/portain
 
 RUN tar -xf portainer-2.14.2-linux-amd64.tar.gz
 
-# tar : is a tool used to collect multiple files into a single archive file (also known as tarball) and also extract the files from the tarball.
-
-# -x : Extract a tar ball.
-
-# -f : Allows you to specify the file name of the tarball.
+# -x : Extract a tar.
+# -f : File.
 
 ENTRYPOINT ["./portainer/portainer"]
+#
