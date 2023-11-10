@@ -1,8 +1,5 @@
 #!/bin/bash
 
-sed -i "s/listen/;listen/g" /etc/php/7.4/fpm/pool.d/www.conf
-echo "listen = 9000" >> /etc/php/7.4/fpm/pool.d/www.conf
-
 while true; do
     if mysql -u "wp_user" -p --password="wp_password" -h "mariadb" -e "USE "wp_db";" &> /dev/null; then
         break
@@ -10,6 +7,11 @@ while true; do
         sleep 1
     fi
 done
+
+
+sed -i "s/listen/;listen/g" /etc/php/7.4/fpm/pool.d/www.conf
+echo "listen = 9000" >> /etc/php/7.4/fpm/pool.d/www.conf
+
 
 cd /var/www/html
 

@@ -4,6 +4,7 @@ services:
   mariadb:
     container_name: mariadb
     build: ./requirements/mariadb
+    image: mariadb
     volumes:
       - mariadb:/var/lib/mysql/
     env_file:
@@ -14,6 +15,7 @@ services:
   wordpress:
     container_name: wordpress
     build: ./requirements/wordpress
+    image: wordpress
     volumes:
       - wordpress:/var/www/html/
     depends_on:
@@ -26,6 +28,7 @@ services:
   nginx:
     container_name: nginx
     build: ./requirements/nginx
+    image: nginx
     ports:
       - 443:443
     depends_on:
@@ -41,6 +44,7 @@ services:
   ftp-server:
     container_name: ftp-server
     build: ./requirements/bonus/ftp-server/
+    image: ftp-server
     env_file: .env
     volumes:
       - wordpress:/var/www/html/wordpress
@@ -52,6 +56,7 @@ services:
   portainer:
     container_name: portainer
     build: ./requirements/bonus/portainer/
+    image: portainer
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
     depends_on:
@@ -64,6 +69,7 @@ services:
   adminer:
     container_name: adminer
     build: ./requirements/bonus/adminer
+    image: adminer
     ports:
       - 8080:8080
     depends_on:
@@ -74,12 +80,14 @@ services:
   redis:
     container_name: redis
     build: ./requirements/bonus/redis
+    image: redis
     networks:
       - inception
     restart: always
   static-website:
     container_name: static-website
     build: ./requirements/bonus/static-website
+    image: static-website
     ports:
       - 9055:9055
     networks:
@@ -103,39 +111,3 @@ volumes:
 networks:
   inception:
     name: inception
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# TODO: read more about network in docker-compose. one network
-
-# TODO: create a volume to store the data of the mariadb.
-# TODO: Read about the docker-compose and how it works.
-# TODO: Read about network in docker-compose.
-# TODO: Why we need docker-compose.
-# TODO: Start the bonus part. (Adminer and then FTP server and then radis cache and then some useful service of your choice and then create a static web site showing your resume)
-
-# TODO: Read about FastCGI.

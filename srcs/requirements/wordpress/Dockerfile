@@ -8,4 +8,4 @@ COPY tools/script.sh /script.sh
 
 RUN chmod +x script.sh
 
-ENTRYPOINT [ "bash", "/script.sh" ]
+ENTRYPOINT [ "./script.sh" ]
