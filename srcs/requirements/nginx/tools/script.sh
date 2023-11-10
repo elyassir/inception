@@ -1,5 +1,10 @@
 #!/bin/bash
 
+
+openssl req -newkey rsa:2048 -nodes -x509 -out $CERTS_ \
+ -keyout $PRIVKEY_ \
+ -subj "/C=$COUNTRY/L=$LOCATION/CN=$DOMAIN_NAME"
+
 echo "
 server {
     listen 443 ssl;
@@ -9,14 +14,10 @@ server {
     index index.php;
 
     ssl    on;
-    ssl_certificate    /etc/ssl/certs/inception.crt;
-    ssl_certificate_key    /etc/ssl/private/inception.key;
+    ssl_certificate    $CERTS_;
+    ssl_certificate_key    $PRIVKEY_;
 
-    ssl_protocols TLSv1.2;
-
-    location / {
-        try_files \$uri \$uri/ /index.php?\$args;
-    }
+    ssl_protocols TLSv1.2 TLSv1.3;
 
     location ~ \.php$ {
         include fastcgi_params;
