@@ -1,0 +1,58 @@
+version: "3.5"
+
+networks:
+  app-network:
+    name: app-network
+    driver: bridge
+
+volumes:
+  wp:
+    driver: local
+    name: wp
+    driver_opts:
+      type: none
+      o: bind
+      device: /root/wordpress
+  db:
+    driver: local
+    name: db
+    driver_opts:
+      type: none
+      o: bind
+      device: /root/mariadb
+
+services:
+  mariadb:
+    container_name: mariadb
+    build: ./mariadb
+
+    volumes:
+      - db:/var/lib/mysql
+    networks:
+      - app-network
+    restart: always
+
+  wordpress:
+    container_name: wordpress
+    build: ./wordpress
+
+    depends_on:
+      - mariadb
+    volumes:
+      - wp:/var/www/html
+    networks:
+      - app-network
+    restart: always
+    
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    ports:
+      - "443:443"
+    depends_on:
+      - wordpress
+    volumes:
+      - wp:/var/www/html
+    networks:
+      - app-network
+    restart: always

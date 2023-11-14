@@ -1,0 +1,32 @@
+version: "3"
+
+volumes:
+  data:
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_USER: user_db
+      MARIADB_PASSWORD: pass_db
+      MARIADB_ROOT_PASSWORD: my-secret-pw
+    volumes:
+      - data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  wp:
+    depends_on:
+      - db
+    image: wordpress:latest
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: user_wp
+      WORDPRESS_DB_PASSWORD: pass_wp
+      WORDPRESS_DB_NAME: wp
+    volumes:
+      - "./:/var/www/html"
+

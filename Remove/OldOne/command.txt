@@ -1,0 +1,47 @@
+```
+Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+
+
+To build the Docker image, use the docker build command:
+
+docker build -t <image_name> .
+
+-t name:tag --> tag is optional
+
+
+To run the Docker image, use the docker run command:
+this meaning create a container from the image
+
+docker run -d --name <container_name> -p 80:80 <image_id>
+
+-d --> run in detached mode
+-p --> port mapping
+
+
+docker run -it alpine:3.13
+
+-it --> interactive mode
+-i --> keep STDIN open even if not attached
+-t --> allocate a pseudo-TTY
+
+
+enter a running container, use exec instead:
+
+docker exec -it <container-name-or-id> bash # bash or sh
+
+
+
+```
+
+
+Specific Example: 'tail -f': The mention of 'tail -f' is an example of one such hacky solution. 
+'tail -f' is a command used to display the contents of a file in real-time as new data is added to it. In some cases, people might use 'tail -f' as a workaround to keep a Docker container running by constantly monitoring a log file or process within the container. 
+However, this is not a recommended practice because it doesn't address the underlying issues and may not be the most efficient or reliable way to manage a container.
+
+Understanding Daemons: The note suggests reading about how daemons work. 
+In computing, a daemon is a background process that runs continuously, often performing various tasks or managing system components. In the context of Docker, daemons are relevant because Docker relies on a daemon to manage containers and images. 
+Understanding how daemons work can provide insight into container management and help you make informed decisions about whether to use them.
+
+
+docker ps -a --> list all containers
+-a --> all containers (default shows just running)
