@@ -5,6 +5,10 @@ openssl req -newkey rsa:2048 -nodes -x509 \
     -keyout $PRIVKEY_ \
     -subj "/C=$COUNTRY/L=$LOCATION/CN=$DOMAIN_NAME"
 
+# newkey : is used to create a new private key
+# nodes : is used to skip the option to secure our certificate with a passphrase
+# x509 : is used to make a self-signed certificate instead of generating a certificate request
+
 echo "
 server {
     listen 443 ssl;

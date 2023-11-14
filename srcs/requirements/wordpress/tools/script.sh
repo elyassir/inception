@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-    if mysql -u "wp_user" -p --password="wp_password" -h "mariadb" -e "USE "wp_db";" &> /dev/null; then
+    if mysql -u "$DB_USER" -p --password="$DB_PASSWORD" -h "$DB_HOST" -e "USE "$DB_NAME";" &> /dev/null; then
         break
     else
         sleep 1
@@ -39,7 +39,7 @@ if [ ! -d "wordpress" ]; then
 
     # Redis cache configuration
 
-    wp config set WP_REDIS_HOST redis --allow-root
+    wp config set WP_REDIS_HOST $CACHE_HOST --allow-root
     wp config set WP_REDIS_PORT 6379 --raw --allow-root
     wp config set WP_CACHE_KEY_SALT $DOMAIN_NAME --allow-root
     wp config set WP_REDIS_CLIENT php-redis --allow-root
@@ -54,5 +54,3 @@ fi
 mkdir -p /run/php
 
 php-fpm7.4 -F
-
-# -F : stay in foreground
